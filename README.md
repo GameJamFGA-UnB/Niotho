@@ -8,6 +8,8 @@ Caso o jogo tenha uma logo, disponibilizá-la no README
 https://gamejamfga-unb.github.io/#/
 
 ## 📃 Sobre o jogo
+
+Ni
 <!---
 Aqui faça uma descrição breve para os jogadores sobre o seu jogo! Qual o gênero? É multijogador? etc...
 --->
@@ -28,3 +30,4 @@ Aqui sugere-se que sejam colocados ao menos os nomes de cada desenvolvedor envol
 - [Rodrigo Wendrel](https://github.com/rodwendrel)
 - [Iago Campelo](https://github.com/iagoscm) 
 - [Leandro Souza](https://github.com/Leanddro13)
+- [Esther Silva](https://github.com/)
