@@ -3,6 +3,10 @@ Caso o jogo tenha uma logo, disponibilizá-la no README
 --->
 ![Logo do game (caso tenha uma)](http://3rd-strike.com/wp-content/uploads/2015/03/OriLogo-black-png.png)
 
+## Site da GameJam
+
+https://gamejamfga-unb.github.io/#/
+
 ## 📃 Sobre o jogo
 <!---
 Aqui faça uma descrição breve para os jogadores sobre o seu jogo! Qual o gênero? É multijogador? etc...
@@ -21,5 +25,6 @@ Aqui recomenda-se que sejam colocados os ícones da game engine e das linguagens
 Aqui sugere-se que sejam colocados ao menos os nomes de cada desenvolvedor envolvido na criação do seu jogo
 --->
 
-- [Matheus Pimentel Leal](https://github.com/Matheuspleal)
-- [Liverson Paulo](https://github.com/liversonp)
+- [Rodrigo Wendrel](https://github.com/rodwendrel)
+- [Iago Campelo](https://github.com/iagoscm) 
+- [Leandro Souza](https://github.com/Leanddro13)
