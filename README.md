@@ -11,7 +11,10 @@ https://gamejamfga-unb.github.io/#/
 <!---
 Aqui faça uma descrição breve para os jogadores sobre o seu jogo! Qual o gênero? É multijogador? etc...
 --->
-Niotho conta a história de um estudante de engenharia da UnB - Gama que começa a ir à academia pois sua psicóloga disse que o ajudaria a passar por suas dificuldades. Em seu primeiro dia de treino, ainda que cabisbaixo, ele sobe na esteira para começar suas atividades, e ao pôr o fone de ouvido, ele passa por um turbilhão de sentimentos, enquanto diversos pensamentos tomam conta de sua mente.
+
+Niòtho conta a história de um estudante de engenharia da UnB - Gama que começa a ir à academia pois sua psicóloga disse que o ajudaria a passar por suas dificuldades. Em seu primeiro dia de treino, ainda que cabisbaixo, ele sobe na esteira para começar suas atividades, e ao pôr o fone de ouvido, ele passa por um turbilhão de sentimentos, enquanto diversos pensamentos tomam conta de sua mente, e a partir disso um novo mundo é gerado, onde ele é capaz de viver uma experiência jamais antes vivida pelo mesmo.
+
+Use fones de ouvido para uma experiência mais imersiva.
 
 ## 🎮 Engine & linguagens
 <!---
