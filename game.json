@@ -1582,6 +1582,25 @@
         "name": "assets\\Sprite Triste\\Piso 3.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "../../Downloads/7165.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "..\\..\\Downloads\\7165.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/audio sample.mpeg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\audio sample.mpeg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1758,14 +1777,30 @@
     {
       "assetStoreId": "",
       "height": 32,
-      "name": "Background",
+      "name": "Back_Triste",
       "tags": "",
-      "texture": "Desert Background.png",
+      "texture": "..\\..\\Downloads\\7165.jpg",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
       "variables": [],
       "effects": [],
-      "behaviors": []
+      "behaviors": [
+        {
+          "acceleration": 400,
+          "allowDiagonals": false,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "customIsometryAngle": 30,
+          "deceleration": 800,
+          "ignoreDefaultControls": true,
+          "maxSpeed": 200,
+          "movementAngleOffset": -45,
+          "name": "TopDownMovement",
+          "rotateObject": false,
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "viewpoint": "CustomIsometry"
+        }
+      ]
     }
   ],
   "objectsGroups": [],
@@ -1850,7 +1885,7 @@
           "height": 896,
           "layer": "",
           "locked": true,
-          "name": "Background",
+          "name": "Back_Triste",
           "persistentUuid": "b1116977-4d20-4e3e-8e6d-14021318fc63",
           "width": 1024,
           "x": -32,
@@ -3363,7 +3398,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.49819999999999975,
+        "zoomFactor": 0.4381999999999997,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3444,7 +3479,7 @@
           "customSize": true,
           "height": 896,
           "layer": "Background",
-          "name": "Background",
+          "name": "Back_Triste",
           "persistentUuid": "48c699d8-eec9-4115-ae30-822d8389a521",
           "width": 1024,
           "x": -32,
@@ -3536,7 +3571,7 @@
           "layer": "",
           "name": "Piso_Triste3",
           "persistentUuid": "5f8f2d41-2b90-4586-b28c-7a2e106e3011",
-          "width": 224,
+          "width": 128,
           "x": 480,
           "y": 480,
           "zOrder": 37,
@@ -3551,8 +3586,8 @@
           "layer": "",
           "name": "Piso_Triste1",
           "persistentUuid": "32f4c87e-eb2d-435f-8beb-d353786d8565",
-          "width": 128,
-          "x": 864,
+          "width": 64,
+          "x": 928,
           "y": 480,
           "zOrder": 35,
           "numberProperties": [],
@@ -3592,13 +3627,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 64,
-          "layer": "",
+          "height": 32,
+          "layer": "Falling",
           "name": "Agua_Triste",
           "persistentUuid": "893ce0c7-60e1-487b-bf25-2959a2b3c46b",
-          "width": 160,
-          "x": 704,
-          "y": 480,
+          "width": 320,
+          "x": 608,
+          "y": 512,
           "zOrder": 38,
           "numberProperties": [],
           "stringProperties": [],
@@ -3612,7 +3647,7 @@
           "name": "Plat_Triste",
           "persistentUuid": "9beab42c-e421-4336-afee-da0b8f5aa8ed",
           "width": 96,
-          "x": 320,
+          "x": 416,
           "y": 384,
           "zOrder": 39,
           "numberProperties": [],
@@ -3627,8 +3662,143 @@
           "name": "Plat_Triste",
           "persistentUuid": "6bc9d113-a9f7-4b15-b4a1-afb5558c0a40",
           "width": 96,
-          "x": 448,
-          "y": 352,
+          "x": 544,
+          "y": 320,
+          "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 896,
+          "layer": "Background",
+          "name": "Back_Triste",
+          "persistentUuid": "b11147cd-f481-4a71-bd36-353380ce1aa6",
+          "width": 1024,
+          "x": 992,
+          "y": -352,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 896,
+          "layer": "Background",
+          "name": "Back_Triste",
+          "persistentUuid": "939fee0a-448c-436a-8e54-9c6188b68d52",
+          "width": 1024,
+          "x": 2016,
+          "y": -352,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Piso_Triste1",
+          "persistentUuid": "993695b3-4a25-420e-bc5f-d573568df5ec",
+          "width": 192,
+          "x": 2272,
+          "y": 480,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Piso_Triste1",
+          "persistentUuid": "e5f4ff7a-7e20-4f0e-84a0-19a62b9d0bba",
+          "width": 256,
+          "x": 2464,
+          "y": 480,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Piso_Triste1",
+          "persistentUuid": "6947d09a-fd09-47de-b0bb-ef4b44fca9e0",
+          "width": 256,
+          "x": 2720,
+          "y": 480,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Piso_Triste1",
+          "persistentUuid": "38a3efab-2b88-4631-b510-a7d8124aca7b",
+          "width": 256,
+          "x": 1504,
+          "y": 480,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Piso_Triste1",
+          "persistentUuid": "b3f1bfe0-8a7c-4f43-a9b8-d70a3afedd0e",
+          "width": 256,
+          "x": 1760,
+          "y": 480,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Piso_Triste1",
+          "persistentUuid": "367cfdae-74f8-4df2-a0c2-6f2edc16fd9f",
+          "width": 256,
+          "x": 2016,
+          "y": 480,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "1e00c51d-26a1-468b-9401-ab4c6decaa26",
+          "width": 96,
+          "x": 672,
+          "y": 256,
           "zOrder": 39,
           "numberProperties": [],
           "stringProperties": [],
@@ -4128,19 +4298,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 3.63614559173584,
-                            "y": 6.466845512390137
+                            "x": 7.807703018188477,
+                            "y": 7.360750675201416
                           },
                           {
-                            "x": 26.2817440032959,
-                            "y": 5.870908737182617
+                            "x": 22.70612335205078,
+                            "y": 7.360750675201416
                           },
                           {
-                            "x": 27.175649642944336,
-                            "y": 23.749011993408203
+                            "x": 23.004091262817383,
+                            "y": 22.557138442993164
                           },
                           {
-                            "x": 3.33817720413208,
+                            "x": 8.105671882629395,
                             "y": 23.4510440826416
                           }
                         ]
@@ -4164,19 +4334,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 3.63614559173584,
-                            "y": 6.466845512390137
+                            "x": 7.807703018188477,
+                            "y": 7.360750675201416
                           },
                           {
-                            "x": 26.2817440032959,
-                            "y": 5.870908737182617
+                            "x": 22.70612335205078,
+                            "y": 7.360750675201416
                           },
                           {
-                            "x": 27.175649642944336,
-                            "y": 23.749011993408203
+                            "x": 23.004091262817383,
+                            "y": 22.557138442993164
                           },
                           {
-                            "x": 3.33817720413208,
+                            "x": 8.105671882629395,
                             "y": 23.4510440826416
                           }
                         ]
@@ -4200,19 +4370,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 3.63614559173584,
-                            "y": 6.466845512390137
+                            "x": 7.807703018188477,
+                            "y": 7.360750675201416
                           },
                           {
-                            "x": 26.2817440032959,
-                            "y": 5.870908737182617
+                            "x": 22.70612335205078,
+                            "y": 7.360750675201416
                           },
                           {
-                            "x": 27.175649642944336,
-                            "y": 23.749011993408203
+                            "x": 23.004091262817383,
+                            "y": 22.557138442993164
                           },
                           {
-                            "x": 3.33817720413208,
+                            "x": 8.105671882629395,
                             "y": 23.4510440826416
                           }
                         ]
@@ -4236,19 +4406,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 3.63614559173584,
-                            "y": 6.466845512390137
+                            "x": 7.807703018188477,
+                            "y": 7.360750675201416
                           },
                           {
-                            "x": 26.2817440032959,
-                            "y": 5.870908737182617
+                            "x": 22.70612335205078,
+                            "y": 7.360750675201416
                           },
                           {
-                            "x": 27.175649642944336,
-                            "y": 23.749011993408203
+                            "x": 23.004091262817383,
+                            "y": 22.557138442993164
                           },
                           {
-                            "x": 3.33817720413208,
+                            "x": 8.105671882629395,
                             "y": 23.4510440826416
                           }
                         ]
@@ -4272,19 +4442,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 3.63614559173584,
-                            "y": 6.466845512390137
+                            "x": 7.807703018188477,
+                            "y": 7.360750675201416
                           },
                           {
-                            "x": 26.2817440032959,
-                            "y": 5.870908737182617
+                            "x": 22.70612335205078,
+                            "y": 7.360750675201416
                           },
                           {
-                            "x": 27.175649642944336,
-                            "y": 23.749011993408203
+                            "x": 23.004091262817383,
+                            "y": 22.557138442993164
                           },
                           {
-                            "x": 3.33817720413208,
+                            "x": 8.105671882629395,
                             "y": 23.4510440826416
                           }
                         ]
@@ -4308,19 +4478,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 3.63614559173584,
-                            "y": 6.466845512390137
+                            "x": 7.807703018188477,
+                            "y": 7.360750675201416
                           },
                           {
-                            "x": 26.2817440032959,
-                            "y": 5.870908737182617
+                            "x": 22.70612335205078,
+                            "y": 7.360750675201416
                           },
                           {
-                            "x": 27.175649642944336,
-                            "y": 23.749011993408203
+                            "x": 23.004091262817383,
+                            "y": 22.557138442993164
                           },
                           {
-                            "x": 3.33817720413208,
+                            "x": 8.105671882629395,
                             "y": 23.4510440826416
                           }
                         ]
@@ -4344,19 +4514,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 3.63614559173584,
-                            "y": 6.466845512390137
+                            "x": 7.807703018188477,
+                            "y": 7.360750675201416
                           },
                           {
-                            "x": 26.2817440032959,
-                            "y": 5.870908737182617
+                            "x": 22.70612335205078,
+                            "y": 7.360750675201416
                           },
                           {
-                            "x": 27.175649642944336,
-                            "y": 23.749011993408203
+                            "x": 23.004091262817383,
+                            "y": 22.557138442993164
                           },
                           {
-                            "x": 3.33817720413208,
+                            "x": 8.105671882629395,
                             "y": 23.4510440826416
                           }
                         ]
@@ -4380,19 +4550,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 3.63614559173584,
-                            "y": 6.466845512390137
+                            "x": 7.807703018188477,
+                            "y": 7.360750675201416
                           },
                           {
-                            "x": 26.2817440032959,
-                            "y": 5.870908737182617
+                            "x": 22.70612335205078,
+                            "y": 7.360750675201416
                           },
                           {
-                            "x": 27.175649642944336,
-                            "y": 23.749011993408203
+                            "x": 23.004091262817383,
+                            "y": 22.557138442993164
                           },
                           {
-                            "x": 3.33817720413208,
+                            "x": 8.105671882629395,
                             "y": 23.4510440826416
                           }
                         ]
@@ -4428,20 +4598,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 3.63614559173584,
-                            "y": 6.168877124786377
+                            "x": 8.701608657836914,
+                            "y": 5.572940349578857
                           },
                           {
-                            "x": 27.473617553710938,
-                            "y": 6.466845512390137
+                            "x": 23.60002899169922,
+                            "y": 6.7648138999938965
                           },
                           {
-                            "x": 28.06955337524414,
-                            "y": 23.4510440826416
+                            "x": 23.60002899169922,
+                            "y": 23.749011993408203
                           },
                           {
-                            "x": 3.63614559173584,
-                            "y": 23.4510440826416
+                            "x": 8.999576568603516,
+                            "y": 23.153076171875
                           }
                         ]
                       ]
@@ -4464,20 +4634,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 3.63614559173584,
-                            "y": 6.168877124786377
+                            "x": 8.701608657836914,
+                            "y": 5.572940349578857
                           },
                           {
-                            "x": 27.473617553710938,
-                            "y": 6.466845512390137
+                            "x": 23.60002899169922,
+                            "y": 6.7648138999938965
                           },
                           {
-                            "x": 28.06955337524414,
-                            "y": 23.4510440826416
+                            "x": 23.60002899169922,
+                            "y": 23.749011993408203
                           },
                           {
-                            "x": 3.63614559173584,
-                            "y": 23.4510440826416
+                            "x": 8.999576568603516,
+                            "y": 23.153076171875
                           }
                         ]
                       ]
@@ -4512,20 +4682,20 @@
                       "customCollisionMask": [
                         [
                           {
+                            "x": 7.807703018188477,
+                            "y": 2.8912246227264404
+                          },
+                          {
+                            "x": 25.685806274414062,
+                            "y": 4.977003574371338
+                          },
+                          {
+                            "x": 25.38783836364746,
+                            "y": 19.577455520629883
+                          },
+                          {
                             "x": 6.019892692565918,
-                            "y": 1.1034141778945923
-                          },
-                          {
-                            "x": 28.665491104125977,
-                            "y": 1.6993510723114014
-                          },
-                          {
-                            "x": 26.5797119140625,
-                            "y": 21.96120262145996
-                          },
-                          {
-                            "x": 1.8483352661132812,
-                            "y": 21.365264892578125
+                            "y": 18.08761215209961
                           }
                         ]
                       ]
@@ -4548,20 +4718,20 @@
                       "customCollisionMask": [
                         [
                           {
+                            "x": 7.807703018188477,
+                            "y": 2.8912246227264404
+                          },
+                          {
+                            "x": 25.685806274414062,
+                            "y": 4.977003574371338
+                          },
+                          {
+                            "x": 25.38783836364746,
+                            "y": 19.577455520629883
+                          },
+                          {
                             "x": 6.019892692565918,
-                            "y": 1.1034141778945923
-                          },
-                          {
-                            "x": 28.665491104125977,
-                            "y": 1.6993510723114014
-                          },
-                          {
-                            "x": 26.5797119140625,
-                            "y": 21.96120262145996
-                          },
-                          {
-                            "x": 1.8483352661132812,
-                            "y": 21.365264892578125
+                            "y": 18.08761215209961
                           }
                         ]
                       ]
@@ -4584,20 +4754,20 @@
                       "customCollisionMask": [
                         [
                           {
+                            "x": 7.807703018188477,
+                            "y": 2.8912246227264404
+                          },
+                          {
+                            "x": 25.685806274414062,
+                            "y": 4.977003574371338
+                          },
+                          {
+                            "x": 25.38783836364746,
+                            "y": 19.577455520629883
+                          },
+                          {
                             "x": 6.019892692565918,
-                            "y": 1.1034141778945923
-                          },
-                          {
-                            "x": 28.665491104125977,
-                            "y": 1.6993510723114014
-                          },
-                          {
-                            "x": 26.5797119140625,
-                            "y": 21.96120262145996
-                          },
-                          {
-                            "x": 1.8483352661132812,
-                            "y": 21.365264892578125
+                            "y": 18.08761215209961
                           }
                         ]
                       ]
@@ -4620,20 +4790,20 @@
                       "customCollisionMask": [
                         [
                           {
+                            "x": 7.807703018188477,
+                            "y": 2.8912246227264404
+                          },
+                          {
+                            "x": 25.685806274414062,
+                            "y": 4.977003574371338
+                          },
+                          {
+                            "x": 25.38783836364746,
+                            "y": 19.577455520629883
+                          },
+                          {
                             "x": 6.019892692565918,
-                            "y": 1.1034141778945923
-                          },
-                          {
-                            "x": 28.665491104125977,
-                            "y": 1.6993510723114014
-                          },
-                          {
-                            "x": 26.5797119140625,
-                            "y": 21.96120262145996
-                          },
-                          {
-                            "x": 1.8483352661132812,
-                            "y": 21.365264892578125
+                            "y": 18.08761215209961
                           }
                         ]
                       ]
@@ -5115,7 +5285,7 @@
                               },
                               "parameters": [
                                 "",
-                                "DesertMusic.mp3",
+                                "assets\\audio sample.mpeg",
                                 "yes",
                                 "50",
                                 ""
@@ -5212,8 +5382,27 @@
                         "value": "TopDownMovementBehavior::SimulateLeftKey"
                       },
                       "parameters": [
+                        "Back_Triste",
+                        "TopDownMovement"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TopDownMovementBehavior::SimulateLeftKey"
+                      },
+                      "parameters": [
                         "Plat_Triste",
                         "TopDownMovement"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TiledSpriteObject::XOffset"
+                      },
+                      "parameters": [
+                        "Agua_Triste",
+                        "-",
+                        "1"
                       ]
                     }
                   ],
@@ -5251,7 +5440,7 @@
                             "value": "TiledSpriteObject::XOffset"
                           },
                           "parameters": [
-                            "Background",
+                            "Back_Triste",
                             "+",
                             "(Variable(ObstacleSpeed)/500)*60*TimeDelta()"
                           ]
@@ -5987,6 +6176,17 @@
           "visibility": false,
           "cameras": [],
           "effects": []
+        },
+        {
+          "ambientLightColorB": 8839904,
+          "ambientLightColorG": 6043600,
+          "ambientLightColorR": 8022528,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "Falling",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
         }
       ],
       "behaviorsSharedData": [
@@ -6063,7 +6263,7 @@
           "customSize": true,
           "height": 896,
           "layer": "Background",
-          "name": "Background",
+          "name": "Back_Triste",
           "persistentUuid": "968c9c47-08c4-44eb-917a-906d2ecee36b",
           "width": 1024,
           "x": -32,
