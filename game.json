@@ -1684,7 +1684,14 @@
       "texture": "assets\\Sprite Triste\\Piso 3.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
-      "variables": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "pisouUmaVez",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -3398,7 +3405,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.4381999999999997,
+        "zoomFactor": 0.4181999999999997,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3552,81 +3559,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 64,
-          "layer": "",
-          "name": "Piso_Triste2",
-          "persistentUuid": "35d220f5-cd03-488a-9ad5-bb3317949bd1",
-          "width": 256,
-          "x": 224,
-          "y": 480,
-          "zOrder": 36,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "name": "Piso_Triste3",
-          "persistentUuid": "5f8f2d41-2b90-4586-b28c-7a2e106e3011",
-          "width": 128,
-          "x": 480,
-          "y": 480,
-          "zOrder": 37,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "name": "Piso_Triste1",
-          "persistentUuid": "32f4c87e-eb2d-435f-8beb-d353786d8565",
-          "width": 64,
-          "x": 928,
-          "y": 480,
-          "zOrder": 35,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "name": "Piso_Triste1",
-          "persistentUuid": "c1f20002-5714-4468-9b70-0816f3769bcd",
-          "width": 256,
-          "x": 992,
-          "y": 480,
-          "zOrder": 35,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "name": "Piso_Triste1",
-          "persistentUuid": "f317afcc-7e68-477b-9b28-c7a2a721e9e4",
-          "width": 256,
-          "x": 1248,
-          "y": 480,
-          "zOrder": 35,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 32,
           "layer": "Falling",
           "name": "Agua_Triste",
@@ -3705,84 +3637,9 @@
           "height": 64,
           "layer": "",
           "name": "Piso_Triste1",
-          "persistentUuid": "993695b3-4a25-420e-bc5f-d573568df5ec",
-          "width": 192,
-          "x": 2272,
-          "y": 480,
-          "zOrder": 35,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "name": "Piso_Triste1",
-          "persistentUuid": "e5f4ff7a-7e20-4f0e-84a0-19a62b9d0bba",
-          "width": 256,
-          "x": 2464,
-          "y": 480,
-          "zOrder": 35,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "name": "Piso_Triste1",
-          "persistentUuid": "6947d09a-fd09-47de-b0bb-ef4b44fca9e0",
-          "width": 256,
-          "x": 2720,
-          "y": 480,
-          "zOrder": 35,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "name": "Piso_Triste1",
           "persistentUuid": "38a3efab-2b88-4631-b510-a7d8124aca7b",
-          "width": 256,
-          "x": 1504,
-          "y": 480,
-          "zOrder": 35,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "name": "Piso_Triste1",
-          "persistentUuid": "b3f1bfe0-8a7c-4f43-a9b8-d70a3afedd0e",
-          "width": 256,
-          "x": 1760,
-          "y": 480,
-          "zOrder": 35,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "name": "Piso_Triste1",
-          "persistentUuid": "367cfdae-74f8-4df2-a0c2-6f2edc16fd9f",
-          "width": 256,
-          "x": 2016,
+          "width": 576,
+          "x": 928,
           "y": 480,
           "zOrder": 35,
           "numberProperties": [],
@@ -3800,6 +3657,51 @@
           "x": 672,
           "y": 256,
           "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "4722bc4c-d067-41a0-910c-99d4aa745333",
+          "width": 96,
+          "x": 864,
+          "y": 256,
+          "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Piso_Triste3",
+          "persistentUuid": "131df338-27d8-4ee7-a787-517d73372d88",
+          "width": 1536,
+          "x": 1504,
+          "y": 480,
+          "zOrder": 37,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Piso_Triste1",
+          "persistentUuid": "1b7e7905-490a-44df-99b7-64df10fe4332",
+          "width": 384,
+          "x": 224,
+          "y": 480,
+          "zOrder": 35,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4255,6 +4157,7 @@
               "ignoreDefaultControls": true,
               "jumpSpeed": 1000,
               "jumpSustainTime": 0,
+              "maxSpeed": 1e+27,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 750,
@@ -4264,7 +4167,6 @@
               "canGrabPlatforms": false,
               "canGrabWithoutMoving": false,
               "ladderClimbingSpeed": 150,
-              "maxSpeed": 250,
               "slopeMaxAngle": 60,
               "useLegacyTrajectory": false,
               "xGrabTolerance": 10,
@@ -5408,44 +5310,79 @@
                   ],
                   "events": [
                     {
-                      "type": "BuiltinCommonInstructions::Comment",
-                      "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
-                      },
-                      "comment": "Create the illusion that Dino is moving by moving the background and platform images",
-                      "comment2": ""
-                    },
-                    {
-                      "disabled": true,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "name": "Acelerando de acordo com o piso",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
                         {
-                          "type": {
-                            "value": "TiledSpriteObject::XOffset"
-                          },
-                          "parameters": [
-                            "Piso_Triste1",
-                            "+",
-                            "Variable(ObstacleSpeed)*TimeDelta()"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "TiledSpriteObject::XOffset"
-                          },
-                          "parameters": [
-                            "Back_Triste",
-                            "+",
-                            "(Variable(ObstacleSpeed)/500)*60*TimeDelta()"
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CollisionNP"
+                              },
+                              "parameters": [
+                                "Slimesito",
+                                "Piso_Triste3",
+                                "",
+                                "",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Piso_Triste3",
+                                "pisouUmaVez",
+                                "<=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Piso_Triste3",
+                                "pisouUmaVez",
+                                "=",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TopDownMovementBehavior::MaxSpeed"
+                              },
+                              "parameters": [
+                                "Piso_Triste3",
+                                "TopDownMovement",
+                                "+",
+                                "30"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TopDownMovementBehavior::MaxSpeed"
+                              },
+                              "parameters": [
+                                "Back_Triste",
+                                "TopDownMovement",
+                                "+",
+                                "30"
+                              ]
+                            }
                           ]
                         }
-                      ]
+                      ],
+                      "parameters": []
                     },
                     {
                       "colorB": 228,
@@ -6044,6 +5981,11 @@
                       "parameters": []
                     }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": []
                 }
               ],
               "parameters": []
