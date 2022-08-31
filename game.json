@@ -1537,6 +1537,42 @@
         "name": "assets\\52.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprite Triste/Piso 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Sprite Triste\\Piso 1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprite Triste/Piso 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Sprite Triste\\Piso 2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprite Triste/Plataforma.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Sprite Triste\\Plataforma.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sprite Triste/Sprite agua.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Sprite Triste\\Sprite agua.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1545,9 +1581,89 @@
     {
       "assetStoreId": "",
       "height": 32,
-      "name": "Platform",
+      "name": "Piso_Triste1",
       "tags": "",
-      "texture": "9patch_Desert Tile_north.png",
+      "texture": "assets\\Sprite Triste\\Piso 1.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": false,
+          "platformType": "NormalPlatform",
+          "yGrabOffset": 0
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "Piso_Triste2",
+      "tags": "",
+      "texture": "assets\\Sprite Triste\\Piso 2.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": false,
+          "platformType": "NormalPlatform",
+          "yGrabOffset": 0
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "Piso_Triste3",
+      "tags": "",
+      "texture": "assets\\Sprite Triste\\Piso 1.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": false,
+          "platformType": "NormalPlatform",
+          "yGrabOffset": 0
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "Plat_Triste",
+      "tags": "",
+      "texture": "assets\\Sprite Triste\\Plataforma.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": false,
+          "platformType": "NormalPlatform",
+          "yGrabOffset": 0
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "Agua_Triste",
+      "tags": "",
+      "texture": "assets\\Sprite Triste\\Sprite agua.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
       "variables": [],
@@ -1670,209 +1786,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 32,
-          "layer": "",
-          "name": "StartText",
-          "persistentUuid": "1ce95ba9-579a-4b51-9b9a-6c88038f21bd",
-          "width": 384,
-          "x": 384,
-          "y": 352,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "PlatformMiddle",
-          "persistentUuid": "da1c00dd-2551-4fd9-b7f9-e7874d191214",
-          "width": 0,
-          "x": 672,
-          "y": 145,
-          "zOrder": 14,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "PlatformLeft",
-          "persistentUuid": "b62a8ede-4097-4852-aacd-d70ceb59851c",
-          "width": 0,
-          "x": 608,
-          "y": 145,
-          "zOrder": 15,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "PlatformRight",
-          "persistentUuid": "a8bcd7b7-926c-4270-800f-abcdc2eb28c2",
-          "width": 0,
-          "x": 736,
-          "y": 145,
-          "zOrder": 16,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "Grass2",
-          "persistentUuid": "9dbc9247-423f-451e-aceb-7412f7328f88",
-          "width": 0,
-          "x": 696,
-          "y": 120,
-          "zOrder": 17,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "Skeleton",
-          "persistentUuid": "ea4a555b-3bac-4891-b725-33d94f3f9d82",
-          "width": 0,
-          "x": 617,
-          "y": 121,
-          "zOrder": 18,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 353.8923034667969,
-          "customSize": true,
-          "height": 72.08785247802734,
-          "layer": "",
-          "name": "SignArrow",
-          "persistentUuid": "7d530d23-0ee7-42b9-8729-2fc409b94e94",
-          "width": 68.81114196777344,
-          "x": 832.9893188476562,
-          "y": 438.4560852050781,
-          "zOrder": 20,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 32,
-          "layer": "",
-          "name": "Cactus2",
-          "persistentUuid": "cfe304d5-b409-449c-86c5-b8ddd8d71e93",
-          "width": 48.69565200805664,
-          "x": 728,
-          "y": 113,
-          "zOrder": 6,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 64,
           "layer": "",
-          "name": "Platform",
+          "name": "Piso_Triste1",
           "persistentUuid": "977f3ef9-eb28-4d4f-ab00-bc95e19390f8",
           "width": 960,
           "x": 0,
           "y": 512,
           "zOrder": 21,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "Cactus3",
-          "persistentUuid": "d3374c65-6b95-45d1-98af-9840ec0606bf",
-          "width": 0,
-          "x": 32,
-          "y": 416,
-          "zOrder": 22,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 238.47134399414062,
-          "layer": "",
-          "name": "Tree",
-          "persistentUuid": "a66762e9-59d6-4016-a212-6c099ad43682",
-          "width": 288,
-          "x": -30,
-          "y": 274,
-          "zOrder": 20,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "Grass2",
-          "persistentUuid": "acc9dbe0-dc4c-4caa-940a-961677001c93",
-          "width": 0,
-          "x": 141,
-          "y": 487,
-          "zOrder": 23,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 17,
-          "layer": "",
-          "name": "Grass2",
-          "persistentUuid": "504fc498-2e69-4fc9-9d0c-4690c9759974",
-          "width": 34.68000030517578,
-          "x": 178.32000732421875,
-          "y": 495,
-          "zOrder": 24,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "Island",
-          "persistentUuid": "7f352884-f027-4b16-ac4e-dc3ac13c1d6d",
-          "width": 0,
-          "x": 768,
-          "y": 320,
-          "zOrder": 25,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3365,7 +3286,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.17819999999999975,
+        "zoomFactor": 0.43819999999999987,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3444,21 +3365,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 64,
-          "layer": "",
-          "name": "Platform",
-          "persistentUuid": "59a6a8b0-78a3-4661-85c0-62f4cc9ef72e",
-          "width": 960,
-          "x": 0,
-          "y": 480,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 896,
           "layer": "Background",
           "name": "Background",
@@ -3512,6 +3418,66 @@
           "x": 59,
           "y": 384,
           "zOrder": 34,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Piso_Triste1",
+          "persistentUuid": "ef91d019-6ec8-4d78-ab6c-b8a5f8840bb7",
+          "width": 256,
+          "x": -32,
+          "y": 480,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Piso_Triste2",
+          "persistentUuid": "35d220f5-cd03-488a-9ad5-bb3317949bd1",
+          "width": 256,
+          "x": 224,
+          "y": 480,
+          "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Piso_Triste3",
+          "persistentUuid": "5f8f2d41-2b90-4586-b28c-7a2e106e3011",
+          "width": 256,
+          "x": 480,
+          "y": 480,
+          "zOrder": 37,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Piso_Triste1",
+          "persistentUuid": "32f4c87e-eb2d-435f-8beb-d353786d8565",
+          "width": 256,
+          "x": 736,
+          "y": 480,
+          "zOrder": 35,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3962,16 +3928,16 @@
               "topEdgeAnchor": 0
             },
             {
+              "ignoreDefaultControls": false,
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 750,
               "deceleration": 750,
               "maxFallingSpeed": 3000,
-              "name": "PlatformerObject",
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "canGoDownFromJumpthru": true,
               "canGrabPlatforms": false,
               "canGrabWithoutMoving": false,
               "gravity": 2300,
-              "ignoreDefaultControls": true,
               "jumpSpeed": 1500,
               "jumpSustainTime": 0,
               "ladderClimbingSpeed": 150,
@@ -4892,65 +4858,6 @@
                 ""
               ]
             }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "SystemInfo::HasTouchScreen"
-                  },
-                  "parameters": [
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "ScoreText",
-                    "=",
-                    "\"Touch to start running.\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "TutorialSprite"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "SystemInfo::HasTouchScreen"
-                  },
-                  "parameters": [
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "TouchScreenTutorial"
-                  ]
-                }
-              ]
-            }
           ]
         },
         {
@@ -5134,6 +5041,7 @@
                       "comment2": ""
                     },
                     {
+                      "disabled": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [],
                       "actions": [
@@ -5142,7 +5050,7 @@
                             "value": "TiledSpriteObject::XOffset"
                           },
                           "parameters": [
-                            "Platform",
+                            "Piso_Triste1",
                             "+",
                             "Variable(ObstacleSpeed)*TimeDelta()"
                           ]
@@ -5258,453 +5166,6 @@
                                   ]
                                 }
                               ]
-                            }
-                          ],
-                          "parameters": []
-                        },
-                        {
-                          "colorB": 228,
-                          "colorG": 176,
-                          "colorR": 74,
-                          "creationTime": 0,
-                          "disabled": true,
-                          "folded": true,
-                          "name": "Player FSM",
-                          "source": "",
-                          "type": "BuiltinCommonInstructions::Group",
-                          "events": [
-                            {
-                              "colorB": 228,
-                              "colorG": 176,
-                              "colorR": 74,
-                              "creationTime": 0,
-                              "name": "Idle",
-                              "source": "",
-                              "type": "BuiltinCommonInstructions::Group",
-                              "events": [
-                                {
-                                  "type": "BuiltinCommonInstructions::Standard",
-                                  "conditions": [
-                                    {
-                                      "type": {
-                                        "value": "VarObjetTxt"
-                                      },
-                                      "parameters": [
-                                        "Slimesito",
-                                        "state",
-                                        "=",
-                                        "\"idle\""
-                                      ]
-                                    }
-                                  ],
-                                  "actions": [],
-                                  "events": [
-                                    {
-                                      "type": "BuiltinCommonInstructions::Comment",
-                                      "color": {
-                                        "b": 109,
-                                        "g": 230,
-                                        "r": 255,
-                                        "textB": 0,
-                                        "textG": 0,
-                                        "textR": 0
-                                      },
-                                      "comment": "Ações",
-                                      "comment2": ""
-                                    },
-                                    {
-                                      "type": "BuiltinCommonInstructions::Standard",
-                                      "conditions": [
-                                        {
-                                          "type": {
-                                            "value": "BuiltinCommonInstructions::Once"
-                                          },
-                                          "parameters": []
-                                        }
-                                      ],
-                                      "actions": [
-                                        {
-                                          "type": {
-                                            "value": "ChangeAnimation"
-                                          },
-                                          "parameters": [
-                                            "Slimesito",
-                                            "=",
-                                            "1"
-                                          ]
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "BuiltinCommonInstructions::Comment",
-                                      "color": {
-                                        "b": 109,
-                                        "g": 230,
-                                        "r": 255,
-                                        "textB": 0,
-                                        "textG": 0,
-                                        "textR": 0
-                                      },
-                                      "comment": "Exit Conditions",
-                                      "comment2": ""
-                                    },
-                                    {
-                                      "type": "BuiltinCommonInstructions::Standard",
-                                      "conditions": [
-                                        {
-                                          "type": {
-                                            "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
-                                          },
-                                          "parameters": [
-                                            "Slimesito",
-                                            "PlatformerObject"
-                                          ]
-                                        }
-                                      ],
-                                      "actions": [
-                                        {
-                                          "type": {
-                                            "value": "ModVarObjetTxt"
-                                          },
-                                          "parameters": [
-                                            "Slimesito",
-                                            "state",
-                                            "=",
-                                            "\"moving\""
-                                          ]
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "BuiltinCommonInstructions::Standard",
-                                      "conditions": [
-                                        {
-                                          "type": {
-                                            "value": "KeyPressed"
-                                          },
-                                          "parameters": [
-                                            "Slimesito",
-                                            "Down"
-                                          ]
-                                        }
-                                      ],
-                                      "actions": [
-                                        {
-                                          "type": {
-                                            "value": "ModVarObjetTxt"
-                                          },
-                                          "parameters": [
-                                            "Slimesito",
-                                            "state",
-                                            "=",
-                                            "\"duck\""
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ],
-                              "parameters": []
-                            },
-                            {
-                              "colorB": 228,
-                              "colorG": 176,
-                              "colorR": 74,
-                              "creationTime": 0,
-                              "name": "Moving",
-                              "source": "",
-                              "type": "BuiltinCommonInstructions::Group",
-                              "events": [
-                                {
-                                  "type": "BuiltinCommonInstructions::Standard",
-                                  "conditions": [
-                                    {
-                                      "type": {
-                                        "value": "VarObjetTxt"
-                                      },
-                                      "parameters": [
-                                        "Slimesito",
-                                        "state",
-                                        "=",
-                                        "\"moving\""
-                                      ]
-                                    }
-                                  ],
-                                  "actions": [],
-                                  "events": [
-                                    {
-                                      "type": "BuiltinCommonInstructions::Comment",
-                                      "color": {
-                                        "b": 109,
-                                        "g": 230,
-                                        "r": 255,
-                                        "textB": 0,
-                                        "textG": 0,
-                                        "textR": 0
-                                      },
-                                      "comment": "Ações",
-                                      "comment2": ""
-                                    },
-                                    {
-                                      "type": "BuiltinCommonInstructions::Standard",
-                                      "conditions": [
-                                        {
-                                          "type": {
-                                            "value": "BuiltinCommonInstructions::Once"
-                                          },
-                                          "parameters": []
-                                        }
-                                      ],
-                                      "actions": [
-                                        {
-                                          "type": {
-                                            "value": "ChangeAnimation"
-                                          },
-                                          "parameters": [
-                                            "Slimesito",
-                                            "=",
-                                            "0"
-                                          ]
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "BuiltinCommonInstructions::Comment",
-                                      "color": {
-                                        "b": 109,
-                                        "g": 230,
-                                        "r": 255,
-                                        "textB": 0,
-                                        "textG": 0,
-                                        "textR": 0
-                                      },
-                                      "comment": "Exit Conditions",
-                                      "comment2": ""
-                                    },
-                                    {
-                                      "type": "BuiltinCommonInstructions::Standard",
-                                      "conditions": [
-                                        {
-                                          "type": {
-                                            "inverted": true,
-                                            "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
-                                          },
-                                          "parameters": [
-                                            "Slimesito",
-                                            "PlatformerObject"
-                                          ]
-                                        }
-                                      ],
-                                      "actions": [
-                                        {
-                                          "type": {
-                                            "value": "ModVarObjetTxt"
-                                          },
-                                          "parameters": [
-                                            "Slimesito",
-                                            "state",
-                                            "=",
-                                            "\"idle\""
-                                          ]
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "BuiltinCommonInstructions::Standard",
-                                      "conditions": [
-                                        {
-                                          "type": {
-                                            "value": "KeyPressed"
-                                          },
-                                          "parameters": [
-                                            "Slimesito",
-                                            "Down"
-                                          ]
-                                        }
-                                      ],
-                                      "actions": [
-                                        {
-                                          "type": {
-                                            "value": "ModVarObjetTxt"
-                                          },
-                                          "parameters": [
-                                            "Slimesito",
-                                            "state",
-                                            "=",
-                                            "\"duck\""
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ],
-                              "parameters": []
-                            },
-                            {
-                              "colorB": 228,
-                              "colorG": 176,
-                              "colorR": 74,
-                              "creationTime": 0,
-                              "name": "Idle",
-                              "source": "",
-                              "type": "BuiltinCommonInstructions::Group",
-                              "events": [
-                                {
-                                  "type": "BuiltinCommonInstructions::Standard",
-                                  "conditions": [
-                                    {
-                                      "type": {
-                                        "value": "VarObjetTxt"
-                                      },
-                                      "parameters": [
-                                        "Slimesito",
-                                        "state",
-                                        "=",
-                                        "\"duck\""
-                                      ]
-                                    }
-                                  ],
-                                  "actions": [],
-                                  "events": [
-                                    {
-                                      "type": "BuiltinCommonInstructions::Comment",
-                                      "color": {
-                                        "b": 109,
-                                        "g": 230,
-                                        "r": 255,
-                                        "textB": 0,
-                                        "textG": 0,
-                                        "textR": 0
-                                      },
-                                      "comment": "Actions",
-                                      "comment2": ""
-                                    },
-                                    {
-                                      "type": "BuiltinCommonInstructions::Standard",
-                                      "conditions": [
-                                        {
-                                          "type": {
-                                            "value": "BuiltinCommonInstructions::Once"
-                                          },
-                                          "parameters": []
-                                        }
-                                      ],
-                                      "actions": [
-                                        {
-                                          "type": {
-                                            "value": "SetAnimationName"
-                                          },
-                                          "parameters": [
-                                            "Slimesito",
-                                            "\"Duck\""
-                                          ]
-                                        }
-                                      ]
-                                    },
-                                    {
-                                      "type": "BuiltinCommonInstructions::Comment",
-                                      "color": {
-                                        "b": 109,
-                                        "g": 230,
-                                        "r": 255,
-                                        "textB": 0,
-                                        "textG": 0,
-                                        "textR": 0
-                                      },
-                                      "comment": "Exit conditions",
-                                      "comment2": ""
-                                    },
-                                    {
-                                      "type": "BuiltinCommonInstructions::Standard",
-                                      "conditions": [
-                                        {
-                                          "type": {
-                                            "value": "KeyReleased"
-                                          },
-                                          "parameters": [
-                                            "Slimesito",
-                                            "Down"
-                                          ]
-                                        },
-                                        {
-                                          "type": {
-                                            "inverted": true,
-                                            "value": "CollisionNP"
-                                          },
-                                          "parameters": [
-                                            "Slimesito",
-                                            "CactusObstacle",
-                                            "",
-                                            "",
-                                            "no"
-                                          ]
-                                        }
-                                      ],
-                                      "actions": [],
-                                      "events": [
-                                        {
-                                          "type": "BuiltinCommonInstructions::Standard",
-                                          "conditions": [
-                                            {
-                                              "type": {
-                                                "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
-                                              },
-                                              "parameters": [
-                                                "Slimesito",
-                                                "PlatformerObject"
-                                              ]
-                                            }
-                                          ],
-                                          "actions": [
-                                            {
-                                              "type": {
-                                                "value": "ModVarObjetTxt"
-                                              },
-                                              "parameters": [
-                                                "Slimesito",
-                                                "state",
-                                                "=",
-                                                "\"moving\""
-                                              ]
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          "type": "BuiltinCommonInstructions::Standard",
-                                          "conditions": [
-                                            {
-                                              "type": {
-                                                "inverted": true,
-                                                "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
-                                              },
-                                              "parameters": [
-                                                "Slimesito",
-                                                "PlatformerObject"
-                                              ]
-                                            }
-                                          ],
-                                          "actions": [
-                                            {
-                                              "type": {
-                                                "value": "ModVarObjetTxt"
-                                              },
-                                              "parameters": [
-                                                "Slimesito",
-                                                "state",
-                                                "=",
-                                                "\"idle\""
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ],
-                              "parameters": []
                             }
                           ],
                           "parameters": []
@@ -6397,7 +5858,7 @@
           "customSize": true,
           "height": 64,
           "layer": "",
-          "name": "Platform",
+          "name": "Piso_Triste1",
           "persistentUuid": "c2c6a11c-e8f8-4ee6-aedb-369f62303136",
           "width": 1152,
           "x": -96,
