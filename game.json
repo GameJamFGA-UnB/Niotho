@@ -2067,6 +2067,36 @@
         "name": "assets\\MORTE\\15.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "assets/musica raiva.mpeg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\musica raiva.mpeg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/musica_triste.mpeg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\musica_triste.mpeg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/musica_triste.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\musica_triste.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2080,7 +2110,14 @@
       "texture": "assets\\Sprite Triste\\Piso 1.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
-      "variables": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "pisouUmaVez",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -2834,11 +2871,11 @@
           "useLegacyBottomAndRightAnchors": true
         },
         {
+          "gravity": 1800,
+          "jumpSpeed": 1000,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "gravity": 2300,
           "ignoreDefaultControls": true,
-          "jumpSpeed": 1000,
           "jumpSustainTime": 0,
           "maxSpeed": 1e+27,
           "acceleration": 750,
@@ -4299,7 +4336,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.8247999999999998,
+        "zoomFactor": 0.4247999999999994,
         "windowMask": false
       },
       "objectsGroups": [
@@ -4400,21 +4437,6 @@
           "customSize": true,
           "height": 32,
           "layer": "",
-          "name": "Plat_Triste",
-          "persistentUuid": "5e156338-2212-4000-ab95-a1decfe954f4",
-          "width": 960,
-          "x": 0,
-          "y": 480,
-          "zOrder": 39,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 32,
-          "layer": "",
           "name": "Agua_Triste",
           "persistentUuid": "ea76e1b7-a662-4dd5-9ca3-5ec45ccaaf4d",
           "width": 960,
@@ -4436,6 +4458,36 @@
           "x": 352,
           "y": 192,
           "zOrder": 42,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "9fb04341-fc88-478d-90dd-01913ebdef34",
+          "width": 576,
+          "x": 0,
+          "y": 64,
+          "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "5c3024a7-cff9-4524-b4a1-7c4846df0a75",
+          "width": 672,
+          "x": 640,
+          "y": 256,
+          "zOrder": 39,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4532,20 +4584,7 @@
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "PlayMusic"
-              },
-              "parameters": [
-                "",
-                "LeaderboardMusic.mp3",
-                "yes",
-                "30",
-                ""
-              ]
-            }
-          ]
+          "actions": []
         },
         {
           "colorB": 228,
@@ -4642,7 +4681,7 @@
       "title": "",
       "v": 209,
       "uiSettings": {
-        "grid": true,
+        "grid": false,
         "gridType": "rectangular",
         "gridWidth": 32,
         "gridHeight": 32,
@@ -4650,8 +4689,8 @@
         "gridOffsetY": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
-        "snap": true,
-        "zoomFactor": 0.5450000000000002,
+        "snap": false,
+        "zoomFactor": 0.31,
         "windowMask": false
       },
       "objectsGroups": [
@@ -4728,7 +4767,7 @@
           "layer": "Falling",
           "name": "Agua_Triste",
           "persistentUuid": "893ce0c7-60e1-487b-bf25-2959a2b3c46b",
-          "width": 2848,
+          "width": 12256,
           "x": 1440,
           "y": 512,
           "zOrder": 38,
@@ -4743,54 +4782,9 @@
           "layer": "",
           "name": "Plat_Triste",
           "persistentUuid": "9beab42c-e421-4336-afee-da0b8f5aa8ed",
-          "width": 96,
-          "x": 1792,
-          "y": 384,
-          "zOrder": 39,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 32,
-          "layer": "",
-          "name": "Plat_Triste",
-          "persistentUuid": "6bc9d113-a9f7-4b15-b4a1-afb5558c0a40",
-          "width": 96,
-          "x": 1920,
+          "width": 544,
+          "x": 1856,
           "y": 320,
-          "zOrder": 39,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 32,
-          "layer": "",
-          "name": "Plat_Triste",
-          "persistentUuid": "1e00c51d-26a1-468b-9401-ab4c6decaa26",
-          "width": 96,
-          "x": 2081,
-          "y": 224,
-          "zOrder": 39,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 32,
-          "layer": "",
-          "name": "Plat_Triste",
-          "persistentUuid": "4722bc4c-d067-41a0-910c-99d4aa745333",
-          "width": 95,
-          "x": 2273,
-          "y": 224,
           "zOrder": 39,
           "numberProperties": [],
           "stringProperties": [],
@@ -4803,7 +4797,7 @@
           "layer": "Background",
           "name": "Back_Triste",
           "persistentUuid": "8ebc80f2-5386-48b3-949f-d9d5f4181aa4",
-          "width": 4288,
+          "width": 21184,
           "x": -32,
           "y": -288,
           "zOrder": 17,
@@ -4817,160 +4811,10 @@
           "height": 32,
           "layer": "",
           "name": "Plat_Triste",
-          "persistentUuid": "595e4ecb-00a5-431e-9956-ce6fe11f609b",
-          "width": 63,
-          "x": 2434,
-          "y": 288,
-          "zOrder": 39,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 32,
-          "layer": "",
-          "name": "Plat_Triste",
-          "persistentUuid": "72f87fd4-17ad-4e33-9f64-ca93e4d07072",
-          "width": 31,
-          "x": 2529,
-          "y": 224,
-          "zOrder": 39,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 32,
-          "layer": "",
-          "name": "Plat_Triste",
-          "persistentUuid": "58142a17-4e90-451b-8388-bd4d53c0c85d",
-          "width": 31,
-          "x": 2626,
-          "y": 288,
-          "zOrder": 39,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 32,
-          "layer": "",
-          "name": "Plat_Triste",
-          "persistentUuid": "6030c0dc-2c72-4bd8-ba60-967753296ff0",
-          "width": 191,
-          "x": 2753,
-          "y": 288,
-          "zOrder": 39,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 32,
-          "layer": "",
-          "name": "Plat_Triste",
-          "persistentUuid": "33687fca-56e8-4864-a8a7-7dccf448d797",
-          "width": 128,
-          "x": 3328,
-          "y": 352,
-          "zOrder": 44,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 32,
-          "layer": "",
-          "name": "Plat_Triste",
-          "persistentUuid": "fd9bee5b-4aeb-452b-8b03-01590441cb5f",
-          "width": 64,
-          "x": 3488,
-          "y": 256,
-          "zOrder": 44,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 32,
-          "layer": "",
-          "name": "Plat_Triste",
-          "persistentUuid": "950bd834-9905-4be2-9d43-f536cd365266",
-          "width": 64,
-          "x": 3616,
-          "y": 416,
-          "zOrder": 44,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 32,
-          "layer": "",
-          "name": "Plat_Triste",
-          "persistentUuid": "7f6b31a2-ba75-41b8-b65b-266da84fcd54",
-          "width": 64,
-          "x": 3744,
-          "y": 416,
-          "zOrder": 44,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 32,
-          "layer": "",
-          "name": "Plat_Triste",
-          "persistentUuid": "f6bcaf0d-7dcf-40cb-b17b-a2093fe5ae8d",
-          "width": 64,
-          "x": 3872,
-          "y": 416,
-          "zOrder": 44,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 32,
-          "layer": "",
-          "name": "Plat_Triste",
-          "persistentUuid": "eb576922-1755-4dfe-b76a-312af6493130",
-          "width": 64,
-          "x": 4000,
-          "y": 416,
-          "zOrder": 44,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 32,
-          "layer": "",
-          "name": "Plat_Triste",
           "persistentUuid": "4d60f697-a4b4-4fe0-abf7-4585a23ea27e",
-          "width": 1760,
+          "width": 576,
           "x": 0,
-          "y": 640,
+          "y": 64,
           "zOrder": 39,
           "numberProperties": [],
           "stringProperties": [],
@@ -4998,9 +4842,9 @@
           "layer": "",
           "name": "Plat_Triste",
           "persistentUuid": "2f18fa46-0ef1-4e58-88f7-c3576f215318",
-          "width": 256,
-          "x": 3008,
-          "y": 416,
+          "width": 568,
+          "x": 3104,
+          "y": 480,
           "zOrder": 44,
           "numberProperties": [],
           "stringProperties": [],
@@ -5013,9 +4857,9 @@
           "layer": "",
           "name": "Plat_Triste",
           "persistentUuid": "38d7c96c-e6be-4cbb-8914-d8cb20118237",
-          "width": 39,
-          "x": 4256,
-          "y": 416,
+          "width": 604,
+          "x": 4320,
+          "y": 352,
           "zOrder": 44,
           "numberProperties": [],
           "stringProperties": [],
@@ -5038,186 +4882,6 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "height": 480,
-          "layer": "Background",
-          "name": "Back_Raiva",
-          "persistentUuid": "ffb55298-b694-4620-96b9-aca7738cc4ba",
-          "width": 1120,
-          "x": 4256,
-          "y": 64,
-          "zOrder": 46,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 32,
-          "layer": "",
-          "name": "Plat_Raiva",
-          "persistentUuid": "b85154ac-0f5f-4da4-a243-10df813bb3b5",
-          "width": 58,
-          "x": 4294,
-          "y": 416,
-          "zOrder": 47,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 32,
-          "layer": "",
-          "name": "Lava_Raiva",
-          "persistentUuid": "362aed5a-169e-488b-8092-6f54f073034d",
-          "width": 1120,
-          "x": 4288,
-          "y": 512,
-          "zOrder": 48,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 32,
-          "layer": "",
-          "name": "Plat_Raiva",
-          "persistentUuid": "5aa09b32-5725-4f0c-a2ad-67907f72cd2a",
-          "width": 26,
-          "x": 4422,
-          "y": 416,
-          "zOrder": 47,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "Plat_Raiva",
-          "persistentUuid": "037a6f77-3911-4a27-9d0b-05a8593ff251",
-          "width": 0,
-          "x": 4512,
-          "y": 320,
-          "zOrder": 50,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "Plat_Raiva",
-          "persistentUuid": "4c35ee95-ba2f-413d-904d-bd98814b5b6a",
-          "width": 0,
-          "x": 4608,
-          "y": 256,
-          "zOrder": 51,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "Plat_Raiva",
-          "persistentUuid": "ba4b41d3-bf4e-4f1c-9d27-fc3e1bda1324",
-          "width": 0,
-          "x": 4768,
-          "y": 384,
-          "zOrder": 52,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "Plat_Raiva",
-          "persistentUuid": "b74b5974-4eeb-4eff-9584-0823c8fc229b",
-          "width": 0,
-          "x": 4864,
-          "y": 480,
-          "zOrder": 53,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "Plat_Raiva",
-          "persistentUuid": "c514f5a8-d367-41dd-9c36-b3bd92f9bd28",
-          "width": 0,
-          "x": 4960,
-          "y": 416,
-          "zOrder": 54,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 32,
-          "layer": "",
-          "name": "Plat_Raiva",
-          "persistentUuid": "acf679fa-5e3e-4fc2-b2c6-903b25dca9af",
-          "width": 284,
-          "x": 5060,
-          "y": 426.25640869140625,
-          "zOrder": 54,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 480,
-          "layer": "",
-          "name": "Back_Calma",
-          "persistentUuid": "5dc45aac-58b3-41f2-91bd-51dd67085e5d",
-          "width": 1472,
-          "x": 6848,
-          "y": 64,
-          "zOrder": 56,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 480,
-          "layer": "",
-          "name": "Back_Alegria",
-          "persistentUuid": "4d52f734-d7de-4919-b29f-59086e97c917",
-          "width": 1472,
-          "x": 5376,
-          "y": 64,
-          "zOrder": 57,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 0,
           "layer": "",
@@ -5227,6 +4891,771 @@
           "x": 367,
           "y": 235,
           "zOrder": 58,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "playerSpawn",
+          "persistentUuid": "aa1b3f17-9a1c-4b6c-bc80-4d3cdebc7d9d",
+          "width": 64,
+          "x": 96,
+          "y": -64,
+          "zOrder": 59,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "66c8edb0-5884-4043-92a9-38d88e876f71",
+          "width": 640,
+          "x": 640,
+          "y": 256,
+          "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "0f9c5987-04f2-4be7-99db-0d00eac9a084",
+          "width": 544,
+          "x": 1280,
+          "y": 160,
+          "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Piso_Triste3",
+          "persistentUuid": "7a74efd7-f760-4790-8e9f-9255bed53720",
+          "width": 3616,
+          "x": 928,
+          "y": -96,
+          "zOrder": 60,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "e8ec9cde-b09a-4f0c-b23f-6a3c5656a2e5",
+          "width": 608,
+          "x": 2464,
+          "y": 448,
+          "zOrder": 62,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 128,
+          "layer": "",
+          "name": "Piso_Triste2",
+          "persistentUuid": "3b8d69ce-47a0-4387-aa8a-5c419d61421b",
+          "width": 64,
+          "x": 2848,
+          "y": 0,
+          "zOrder": 63,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Piso_Triste2",
+          "persistentUuid": "10ee57cd-5cb8-4b16-a481-4a261fa93fc3",
+          "width": 0,
+          "x": 2848,
+          "y": 128,
+          "zOrder": 64,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 192,
+          "layer": "",
+          "name": "Piso_Triste2",
+          "persistentUuid": "37f6b288-7b89-46eb-bbf2-bdfaab061578",
+          "width": 384,
+          "x": 2464,
+          "y": 0,
+          "zOrder": 61,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 128,
+          "layer": "",
+          "name": "Piso_Triste2",
+          "persistentUuid": "85c4cb44-c159-44bf-9276-e7dc6e109f5f",
+          "width": 320,
+          "x": 2976,
+          "y": 0,
+          "zOrder": 61,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 160,
+          "layer": "",
+          "name": "Piso_Triste2",
+          "persistentUuid": "7d3c6ec2-558a-41b9-bf65-aa5a1f284b34",
+          "width": 32,
+          "x": 2912,
+          "y": 0,
+          "zOrder": 61,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 192,
+          "layer": "",
+          "name": "Piso_Triste2",
+          "persistentUuid": "ad4df1a1-67d2-4577-903b-88984f246dca",
+          "width": 32,
+          "x": 2944,
+          "y": 0,
+          "zOrder": 61,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 160,
+          "layer": "",
+          "name": "Piso_Triste2",
+          "persistentUuid": "7035f177-eebf-439a-bc7a-6769dfb642f9",
+          "width": 32,
+          "x": 2976,
+          "y": 64,
+          "zOrder": 61,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 294,
+          "layer": "",
+          "name": "Piso_Triste2",
+          "persistentUuid": "694500f6-0718-461a-a459-d59ac31b4738",
+          "width": 32,
+          "x": 3008,
+          "y": 128,
+          "zOrder": 61,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 294,
+          "layer": "",
+          "name": "Piso_Triste2",
+          "persistentUuid": "0ee9ce33-24a8-4cb2-8a39-eb407cce2a85",
+          "width": 32,
+          "x": 3040,
+          "y": 128,
+          "zOrder": 61,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 160,
+          "layer": "",
+          "name": "Piso_Triste2",
+          "persistentUuid": "cba8d838-3790-4e5e-813f-5d45228d2e75",
+          "width": 128,
+          "x": 3072,
+          "y": 128,
+          "zOrder": 61,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 128,
+          "layer": "",
+          "name": "Piso_Triste2",
+          "persistentUuid": "ad28e299-188b-476b-973a-8b1daf82f290",
+          "width": 32,
+          "x": 3200,
+          "y": 128,
+          "zOrder": 61,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 96,
+          "layer": "",
+          "name": "Piso_Triste2",
+          "persistentUuid": "15878094-c8cd-43a5-a510-780036015c7f",
+          "width": 32,
+          "x": 3232,
+          "y": 128,
+          "zOrder": 61,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 96,
+          "layer": "",
+          "name": "Piso_Triste2",
+          "persistentUuid": "589c189b-7f89-4b82-928d-f2999a65bd76",
+          "width": 32,
+          "x": 3264,
+          "y": 96,
+          "zOrder": 61,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 160,
+          "layer": "",
+          "name": "Piso_Triste2",
+          "persistentUuid": "f3bcf01a-e0f5-41b5-af81-31dae995c5c8",
+          "width": 32,
+          "x": 3296,
+          "y": 0,
+          "zOrder": 61,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 96,
+          "layer": "",
+          "name": "Piso_Triste2",
+          "persistentUuid": "2e4365e8-191c-4583-9606-432801a80733",
+          "width": 32,
+          "x": 3328,
+          "y": 0,
+          "zOrder": 61,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 160,
+          "layer": "",
+          "name": "Piso_Triste2",
+          "persistentUuid": "322eb858-9ac8-415b-bc8f-4cf06c08170b",
+          "width": 32,
+          "x": 2432,
+          "y": 0,
+          "zOrder": 65,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 128,
+          "layer": "",
+          "name": "Piso_Triste2",
+          "persistentUuid": "98b95318-5a7d-42d6-9d46-cd85e1c23640",
+          "width": 32,
+          "x": 2400,
+          "y": 0,
+          "zOrder": 61,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Piso_Triste2",
+          "persistentUuid": "eeeddf38-ba05-42f9-b681-d7a243583202",
+          "width": 32,
+          "x": 2368,
+          "y": 0,
+          "zOrder": 61,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Piso_Triste2",
+          "persistentUuid": "ea24a5c7-2843-4292-85d5-72533cbcdb0c",
+          "width": 32,
+          "x": 2336,
+          "y": 0,
+          "zOrder": 61,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "b4384775-449a-43d4-ad2e-18984997b9d4",
+          "width": 576,
+          "x": 3712,
+          "y": 416,
+          "zOrder": 44,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "cc1966bd-9b35-4d3a-8e15-f2756fd93554",
+          "width": 32,
+          "x": 4958,
+          "y": 262,
+          "zOrder": 44,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "7eae093a-573e-4466-95be-2fc63cf1b6fc",
+          "width": 440,
+          "x": 5056,
+          "y": 256,
+          "zOrder": 44,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "638e8e29-1d30-443e-b697-8404a578639a",
+          "width": 32,
+          "x": 5553,
+          "y": 334,
+          "zOrder": 44,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "c243e9b3-38db-4fb5-af39-b4699210e3fc",
+          "width": 510,
+          "x": 5632,
+          "y": 480,
+          "zOrder": 44,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "ca59242c-10c6-49a8-abb1-e13959616291",
+          "width": 32,
+          "x": 6174,
+          "y": 384,
+          "zOrder": 44,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "031158aa-633d-434c-b94e-5c0f9641047c",
+          "width": 576,
+          "x": 6272,
+          "y": 352,
+          "zOrder": 44,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Agua_Triste",
+          "persistentUuid": "657eb0db-f72a-468c-9d6e-d6b0b64218da",
+          "width": 0,
+          "x": 6688,
+          "y": 320,
+          "zOrder": 66,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "6efa3213-8833-4a75-909e-e7751267be8f",
+          "width": 384,
+          "x": 6848,
+          "y": 288,
+          "zOrder": 67,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "0cde20e8-935e-474e-ac97-8a2567cc9695",
+          "width": 384,
+          "x": 6848,
+          "y": 288,
+          "zOrder": 67,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "11a531c5-9c59-4576-a64d-1adcffb66543",
+          "width": 96,
+          "x": 7328,
+          "y": 352,
+          "zOrder": 67,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "89083864-9035-4390-87d2-625b5513e132",
+          "width": 384,
+          "x": 7488,
+          "y": 288,
+          "zOrder": 67,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "9f5753bf-d207-4690-8406-6911c910e2fd",
+          "width": 64,
+          "x": 7968,
+          "y": 416,
+          "zOrder": 67,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "2f9b6f8b-5fef-4711-ae88-817fb00c4cef",
+          "width": 555,
+          "x": 8064,
+          "y": 448,
+          "zOrder": 67,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "a4ec1c7f-bf24-4ee0-8646-24c8b2774e69",
+          "width": 34,
+          "x": 8650,
+          "y": 344,
+          "zOrder": 67,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "pressDown",
+          "persistentUuid": "2acc4154-5696-4b7f-af00-a9c77babf4e9",
+          "width": 0,
+          "x": 2863,
+          "y": 375,
+          "zOrder": 68,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "08fb5c43-741d-46d8-9fbc-04f930e3718d",
+          "width": 407,
+          "x": 8745,
+          "y": 300,
+          "zOrder": 67,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "pressUp",
+          "persistentUuid": "75674db2-5122-4ec9-9c9d-e8dbbcb8c6b2",
+          "width": 0,
+          "x": 964,
+          "y": 157,
+          "zOrder": 69,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "625de20e-c80e-4edf-9f22-4e19cd41c9f8",
+          "width": 32,
+          "x": 9216,
+          "y": 352,
+          "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "d37f4cbe-f779-4156-bff8-bd7a1534797b",
+          "width": 371,
+          "x": 9280,
+          "y": 288,
+          "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Piso_Triste1",
+          "persistentUuid": "3b6163bf-e037-45fe-b11f-3f40edf98379",
+          "width": 5440,
+          "x": 9856,
+          "y": 64,
+          "zOrder": 70,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "1ec37c64-1336-4099-be19-7180fa6f1863",
+          "width": 96,
+          "x": 9888,
+          "y": 352,
+          "zOrder": 72,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "057bd8b0-393d-4cd7-94f4-2acd458aac42",
+          "width": 0,
+          "x": 10038,
+          "y": 396,
+          "zOrder": 73,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "9867b620-5310-49de-a30f-41ef56cd9d25",
+          "width": 59,
+          "x": 10070,
+          "y": 384,
+          "zOrder": 74,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 65,
+          "layer": "",
+          "name": "Piso_Triste1",
+          "persistentUuid": "afd5f690-46fb-48b2-bf26-e063d195875f",
+          "width": 64,
+          "x": 9792,
+          "y": 447,
+          "zOrder": 75,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "f90136d1-fb71-4821-8949-35285837226e",
+          "width": 119,
+          "x": 10171,
+          "y": 427,
+          "zOrder": 74,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Piso_Triste1",
+          "persistentUuid": "9dc77ef0-7bd5-4cb4-a1ee-0aa844334eff",
+          "width": 0,
+          "x": 915,
+          "y": 230,
+          "zOrder": 76,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5309,6 +5738,91 @@
               "viewpoint": "TopDown"
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "playerSpawn",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": []
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "pressDown",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "acceleration": 400,
+              "allowDiagonals": false,
+              "angleOffset": 0,
+              "angularMaxSpeed": 180,
+              "customIsometryAngle": 30,
+              "deceleration": 800,
+              "ignoreDefaultControls": true,
+              "maxSpeed": 200,
+              "movementAngleOffset": -45,
+              "name": "TopDownMovement",
+              "rotateObject": false,
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "viewpoint": "CustomIsometry"
+            }
+          ],
+          "string": "hold ↓ to duck ",
+          "font": "assets\\dpcomic.ttf",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "pressUp",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "TopDownMovement",
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "acceleration": 400,
+              "allowDiagonals": false,
+              "angleOffset": 0,
+              "angularMaxSpeed": 180,
+              "customIsometryAngle": 30,
+              "deceleration": 800,
+              "ignoreDefaultControls": true,
+              "maxSpeed": 200,
+              "movementAngleOffset": -45,
+              "rotateObject": false,
+              "viewpoint": "CustomIsometry"
+            }
+          ],
+          "string": "press ↑ to jump",
+          "font": "assets\\dpcomic.ttf",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
       "events": [
@@ -5350,8 +5864,8 @@
               },
               "parameters": [
                 "",
-                "assets\\audio sample.mpeg",
-                "yes",
+                "assets\\musica_triste.mp3",
+                "no",
                 "50",
                 ""
               ]
@@ -5390,7 +5904,7 @@
               "colorG": 196,
               "colorR": 74,
               "creationTime": 0,
-              "name": "Preparing to start",
+              "name": "Preparando para começar",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
@@ -5458,18 +5972,6 @@
                             },
                             {
                               "type": {
-                                "value": "PlayMusic"
-                              },
-                              "parameters": [
-                                "",
-                                "assets\\audio sample.mpeg",
-                                "yes",
-                                "50",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
                                 "value": "ActivateBehavior"
                               },
                               "parameters": [
@@ -5492,7 +5994,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "name": "Playing the game",
+              "name": "Jogando",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
@@ -5551,7 +6053,7 @@
                               },
                               "parameters": [
                                 "Slimesito",
-                                "Piso_Triste3",
+                                "Piso_Triste1",
                                 "",
                                 "",
                                 ""
@@ -5562,7 +6064,7 @@
                                 "value": "VarObjet"
                               },
                               "parameters": [
-                                "Piso_Triste3",
+                                "Piso_Triste1",
                                 "pisouUmaVez",
                                 "<=",
                                 "0"
@@ -5575,7 +6077,7 @@
                                 "value": "ModVarObjet"
                               },
                               "parameters": [
-                                "Piso_Triste3",
+                                "Piso_Triste1",
                                 "pisouUmaVez",
                                 "=",
                                 "1"
@@ -5586,7 +6088,7 @@
                                 "value": "TopDownMovementBehavior::MaxSpeed"
                               },
                               "parameters": [
-                                "Piso_Triste3",
+                                "Piso_Triste1",
                                 "TopDownMovement",
                                 "+",
                                 "50"
@@ -5743,18 +6245,6 @@
                               "actions": [
                                 {
                                   "type": {
-                                    "value": "PlaySound"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "Jump.mp3",
-                                    "",
-                                    "100",
-                                    "1"
-                                  ]
-                                },
-                                {
-                                  "type": {
                                     "value": "SetAnimationName"
                                   },
                                   "parameters": [
@@ -5783,20 +6273,7 @@
                                   "parameters": []
                                 }
                               ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "value": "PlaySound"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "Skid.mp3",
-                                    "",
-                                    "30",
-                                    "1"
-                                  ]
-                                }
-                              ]
+                              "actions": []
                             }
                           ],
                           "parameters": []
@@ -6221,6 +6698,60 @@
                         }
                       ],
                       "parameters": []
+                    },
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "name": "Respawnando",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::And"
+                              },
+                              "parameters": [],
+                              "subInstructions": [
+                                {
+                                  "type": {
+                                    "value": "AnyKeyPressed"
+                                  },
+                                  "parameters": [
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "VarSceneTxt"
+                                  },
+                                  "parameters": [
+                                    "GameStatus",
+                                    "=",
+                                    "\"Dead\""
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PushScene"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Game\""
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
                     }
                   ]
                 }
@@ -6266,17 +6797,6 @@
           "effects": []
         },
         {
-          "ambientLightColorB": 167798124,
-          "ambientLightColorG": 6032144,
-          "ambientLightColorR": 8527640,
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "name": "Gameover UI",
-          "visibility": true,
-          "cameras": [],
-          "effects": []
-        },
-        {
           "ambientLightColorB": 167800431,
           "ambientLightColorG": 6034960,
           "ambientLightColorR": 9655904,
@@ -6284,6 +6804,17 @@
           "isLightingLayer": false,
           "name": "TouchButtons",
           "visibility": false,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 167798124,
+          "ambientLightColorG": 6032144,
+          "ambientLightColorR": 8527640,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "Gameover UI",
+          "visibility": true,
           "cameras": [],
           "effects": []
         },
@@ -6694,6 +7225,24 @@
               },
               "parameters": [
                 "Back_Calma",
+                "TopDownMovement"
+              ]
+            },
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::SimulateLeftKey"
+              },
+              "parameters": [
+                "pressDown",
+                "TopDownMovement"
+              ]
+            },
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::SimulateLeftKey"
+              },
+              "parameters": [
+                "pressUp",
                 "TopDownMovement"
               ]
             }
