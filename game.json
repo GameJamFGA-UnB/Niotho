@@ -1890,10 +1890,10 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "8bef94249eeed8fd417cdfe517a69337.png",
+        "file": "2acb957afedc551e881eaeb76c7d5b5a.png",
         "kind": "image",
         "metadata": "",
-        "name": "8bef94249eeed8fd417cdfe517a69337.png",
+        "name": "2acb957afedc551e881eaeb76c7d5b5a.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -1908,10 +1908,10 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "2acb957afedc551e881eaeb76c7d5b5a.png",
+        "file": "8bef94249eeed8fd417cdfe517a69337.png",
         "kind": "image",
         "metadata": "",
-        "name": "2acb957afedc551e881eaeb76c7d5b5a.png",
+        "name": "8bef94249eeed8fd417cdfe517a69337.png",
         "smoothed": true,
         "userAdded": true
       }
@@ -2672,6 +2672,11 @@
           "rightEdgeAnchor": 0,
           "topEdgeAnchor": 0,
           "useLegacyBottomAndRightAnchors": true
+        },
+        {
+          "extraBorder": 0,
+          "name": "DestruirFora",
+          "type": "DestroyOutsideBehavior::DestroyOutside"
         },
         {
           "name": "PlatformerObject",
@@ -3616,7 +3621,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.8247999999999998,
+        "zoomFactor": 0.3715999999999997,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3661,7 +3666,7 @@
           "persistentUuid": "b1116977-4d20-4e3e-8e6d-14021318fc63",
           "width": 1024,
           "x": -32,
-          "y": -352,
+          "y": -288,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -3927,7 +3932,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.35,
+        "zoomFactor": 0.3393999999999999,
         "windowMask": false
       },
       "objectsGroups": [
@@ -4075,13 +4080,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 64,
+          "height": 32,
           "layer": "",
           "name": "Piso_Triste3",
           "persistentUuid": "131df338-27d8-4ee7-a787-517d73372d88",
           "width": 352,
           "x": 1440,
-          "y": 416,
+          "y": 448,
           "zOrder": 37,
           "numberProperties": [],
           "stringProperties": [],
@@ -4090,13 +4095,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 576,
+          "height": 864,
           "layer": "Background",
           "name": "Back_Triste",
           "persistentUuid": "8ebc80f2-5386-48b3-949f-d9d5f4181aa4",
-          "width": 4320,
+          "width": 4288,
           "x": -32,
-          "y": -32,
+          "y": -288,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -4335,7 +4340,7 @@
           "name": "Back_Raiva",
           "persistentUuid": "ffb55298-b694-4620-96b9-aca7738cc4ba",
           "width": 1120,
-          "x": 4288,
+          "x": 4256,
           "y": 64,
           "zOrder": 46,
           "numberProperties": [],
@@ -4485,7 +4490,7 @@
           "name": "Back_Calma",
           "persistentUuid": "5dc45aac-58b3-41f2-91bd-51dd67085e5d",
           "width": 1472,
-          "x": 6880,
+          "x": 6848,
           "y": 64,
           "zOrder": 56,
           "numberProperties": [],
@@ -4500,7 +4505,7 @@
           "name": "Back_Alegria",
           "persistentUuid": "4d52f734-d7de-4919-b29f-59086e97c917",
           "width": 1472,
-          "x": 5408,
+          "x": 5376,
           "y": 64,
           "zOrder": 57,
           "numberProperties": [],
@@ -4542,6 +4547,8 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "TopDownMovement",
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "acceleration": 400,
               "allowDiagonals": false,
               "angleOffset": 0,
@@ -4551,9 +4558,7 @@
               "ignoreDefaultControls": true,
               "maxSpeed": 200,
               "movementAngleOffset": 0,
-              "name": "TopDownMovement",
               "rotateObject": false,
-              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "viewpoint": "TopDown"
             }
           ]
@@ -4579,7 +4584,39 @@
               },
               "parameters": [
                 "Slimesito",
-                "\"Idle\""
+                "\"Run\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Slimesito",
+                "PlatformerObject",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "assets\\audio sample.mpeg",
+                "yes",
+                "50",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "GameStatus",
+                "=",
+                "\"Playing\""
               ]
             }
           ]
@@ -4666,16 +4703,6 @@
                             },
                             {
                               "type": {
-                                "value": "ActivateBehavior"
-                              },
-                              "parameters": [
-                                "Slimesito",
-                                "PlatformerObject",
-                                "yes"
-                              ]
-                            },
-                            {
-                              "type": {
                                 "value": "PlayMusic"
                               },
                               "parameters": [
@@ -4684,6 +4711,16 @@
                                 "yes",
                                 "50",
                                 ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ActivateBehavior"
+                              },
+                              "parameters": [
+                                "Slimesito",
+                                "PlatformerObject",
+                                "yes"
                               ]
                             }
                           ]
@@ -4872,6 +4909,28 @@
                               },
                               "parameters": [
                                 "Back_Raiva",
+                                "TopDownMovement",
+                                "+",
+                                "50"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TopDownMovementBehavior::MaxSpeed"
+                              },
+                              "parameters": [
+                                "Back_Alegria",
+                                "TopDownMovement",
+                                "+",
+                                "50"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TopDownMovementBehavior::MaxSpeed"
+                              },
+                              "parameters": [
+                                "Back_Calma",
                                 "TopDownMovement",
                                 "+",
                                 "50"
@@ -5250,7 +5309,6 @@
                           "comment2": ""
                         },
                         {
-                          "disabled": true,
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [
                             {
@@ -5266,7 +5324,7 @@
                                   "parameters": [
                                     "Slimesito",
                                     ">",
-                                    "Piso_Triste2.BoundingBoxCenterY()"
+                                    "Platform.BoundingBoxCenterY()"
                                   ]
                                 },
                                 {
@@ -5275,7 +5333,7 @@
                                   },
                                   "parameters": [
                                     "Slimesito",
-                                    "Piso_Triste2",
+                                    "",
                                     "",
                                     "",
                                     ""
@@ -5677,6 +5735,24 @@
               },
               "parameters": [
                 "Back_Raiva",
+                "TopDownMovement"
+              ]
+            },
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::SimulateLeftKey"
+              },
+              "parameters": [
+                "Back_Alegria",
+                "TopDownMovement"
+              ]
+            },
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::SimulateLeftKey"
+              },
+              "parameters": [
+                "Back_Calma",
                 "TopDownMovement"
               ]
             }
