@@ -1833,6 +1833,87 @@
         "name": "assets\\Sprite Calmo\\Piso1.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "../../Downloads/705928d396944cff05417cfe7ea07f2f.gif",
+        "kind": "image",
+        "metadata": "",
+        "name": "..\\..\\Downloads\\705928d396944cff05417cfe7ea07f2f.gif",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "../../Downloads/400_F_416618041_AXhSnjLvlrXR4CdjvadavQQIHbFxaEma.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "..\\..\\Downloads\\400_F_416618041_AXhSnjLvlrXR4CdjvadavQQIHbFxaEma.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "../../Downloads/8bef94249eeed8fd417cdfe517a69337.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "..\\..\\Downloads\\8bef94249eeed8fd417cdfe517a69337.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "../../Downloads/a3659ec38bc6950dd9dfd99cb5796e90c4dce76e.webp",
+        "kind": "image",
+        "metadata": "",
+        "name": "..\\..\\Downloads\\a3659ec38bc6950dd9dfd99cb5796e90c4dce76e.webp",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "../../Downloads/2acb957afedc551e881eaeb76c7d5b5a.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "..\\..\\Downloads\\2acb957afedc551e881eaeb76c7d5b5a.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "15a5471b85022bbfc4195e259495653e.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "15a5471b85022bbfc4195e259495653e.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "8bef94249eeed8fd417cdfe517a69337.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "8bef94249eeed8fd417cdfe517a69337.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "400_F_416618041_AXhSnjLvlrXR4CdjvadavQQIHbFxaEma.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "400_F_416618041_AXhSnjLvlrXR4CdjvadavQQIHbFxaEma.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "2acb957afedc551e881eaeb76c7d5b5a.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "2acb957afedc551e881eaeb76c7d5b5a.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2459,7 +2540,91 @@
       "height": 32,
       "name": "Back_Triste",
       "tags": "",
-      "texture": "..\\..\\Downloads\\7165.jpg",
+      "texture": "8bef94249eeed8fd417cdfe517a69337.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "acceleration": 400,
+          "allowDiagonals": false,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "customIsometryAngle": 30,
+          "deceleration": 800,
+          "ignoreDefaultControls": true,
+          "maxSpeed": 200,
+          "movementAngleOffset": -45,
+          "rotateObject": false,
+          "viewpoint": "CustomIsometry"
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "Back_Raiva",
+      "tags": "",
+      "texture": "400_F_416618041_AXhSnjLvlrXR4CdjvadavQQIHbFxaEma.jpg",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "acceleration": 400,
+          "allowDiagonals": false,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "customIsometryAngle": 30,
+          "deceleration": 800,
+          "ignoreDefaultControls": true,
+          "maxSpeed": 200,
+          "movementAngleOffset": -45,
+          "rotateObject": false,
+          "viewpoint": "CustomIsometry"
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "Back_Alegria",
+      "tags": "",
+      "texture": "15a5471b85022bbfc4195e259495653e.jpg",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "acceleration": 400,
+          "allowDiagonals": false,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "customIsometryAngle": 30,
+          "deceleration": 800,
+          "ignoreDefaultControls": true,
+          "maxSpeed": 200,
+          "movementAngleOffset": -45,
+          "rotateObject": false,
+          "viewpoint": "CustomIsometry"
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "Back_Calma",
+      "tags": "",
+      "texture": "2acb957afedc551e881eaeb76c7d5b5a.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
       "variables": [],
@@ -3582,7 +3747,7 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "NewText",
+          "name": "Title",
           "persistentUuid": "91806bf6-9b87-42d5-9d32-9dc86946d0a6",
           "width": 0,
           "x": 352,
@@ -3598,7 +3763,7 @@
           "assetStoreId": "",
           "bold": false,
           "italic": false,
-          "name": "NewText",
+          "name": "Title",
           "smoothed": true,
           "tags": "",
           "type": "TextObject::Text",
@@ -3654,15 +3819,6 @@
                 "yes",
                 "30",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetAnimationName"
-              },
-              "parameters": [
-                "Slimesito",
-                "\"Idle\""
               ]
             }
           ]
@@ -3771,7 +3927,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.42999999999999994,
+        "zoomFactor": 0.35,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3844,13 +4000,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 64,
+          "height": 32,
           "layer": "Falling",
           "name": "Agua_Triste",
           "persistentUuid": "893ce0c7-60e1-487b-bf25-2959a2b3c46b",
           "width": 2848,
           "x": 1440,
-          "y": 480,
+          "y": 512,
           "zOrder": 38,
           "numberProperties": [],
           "stringProperties": [],
@@ -3934,13 +4090,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 896,
+          "height": 576,
           "layer": "Background",
           "name": "Back_Triste",
           "persistentUuid": "8ebc80f2-5386-48b3-949f-d9d5f4181aa4",
-          "width": 15840,
+          "width": 4320,
           "x": -32,
-          "y": -352,
+          "y": -32,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -4059,7 +4215,7 @@
           "name": "Plat_Triste",
           "persistentUuid": "7f6b31a2-ba75-41b8-b65b-266da84fcd54",
           "width": 64,
-          "x": 3712,
+          "x": 3744,
           "y": 416,
           "zOrder": 44,
           "numberProperties": [],
@@ -4074,7 +4230,7 @@
           "name": "Plat_Triste",
           "persistentUuid": "f6bcaf0d-7dcf-40cb-b17b-a2093fe5ae8d",
           "width": 64,
-          "x": 3808,
+          "x": 3872,
           "y": 416,
           "zOrder": 44,
           "numberProperties": [],
@@ -4089,24 +4245,9 @@
           "name": "Plat_Triste",
           "persistentUuid": "eb576922-1755-4dfe-b76a-312af6493130",
           "width": 64,
-          "x": 3904,
+          "x": 4000,
           "y": 416,
           "zOrder": 44,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 64,
-          "layer": "",
-          "name": "Piso_Triste3",
-          "persistentUuid": "099f3e56-ab46-407d-b4e0-c9fe9f8e0405",
-          "width": 352,
-          "x": 1984,
-          "y": 416,
-          "zOrder": 37,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4152,6 +4293,216 @@
           "x": 3008,
           "y": 416,
           "zOrder": 44,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "38d7c96c-e6be-4cbb-8914-d8cb20118237",
+          "width": 39,
+          "x": 4256,
+          "y": 416,
+          "zOrder": 44,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "37497da5-f039-4701-8f75-30c2c17903b0",
+          "width": 64,
+          "x": 4128,
+          "y": 416,
+          "zOrder": 44,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 480,
+          "layer": "Background",
+          "name": "Back_Raiva",
+          "persistentUuid": "ffb55298-b694-4620-96b9-aca7738cc4ba",
+          "width": 1120,
+          "x": 4288,
+          "y": 64,
+          "zOrder": 46,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Raiva",
+          "persistentUuid": "b85154ac-0f5f-4da4-a243-10df813bb3b5",
+          "width": 58,
+          "x": 4294,
+          "y": 416,
+          "zOrder": 47,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Lava_Raiva",
+          "persistentUuid": "362aed5a-169e-488b-8092-6f54f073034d",
+          "width": 1120,
+          "x": 4288,
+          "y": 512,
+          "zOrder": 48,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Raiva",
+          "persistentUuid": "5aa09b32-5725-4f0c-a2ad-67907f72cd2a",
+          "width": 26,
+          "x": 4422,
+          "y": 416,
+          "zOrder": 47,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Plat_Raiva",
+          "persistentUuid": "037a6f77-3911-4a27-9d0b-05a8593ff251",
+          "width": 0,
+          "x": 4512,
+          "y": 320,
+          "zOrder": 50,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Plat_Raiva",
+          "persistentUuid": "4c35ee95-ba2f-413d-904d-bd98814b5b6a",
+          "width": 0,
+          "x": 4608,
+          "y": 256,
+          "zOrder": 51,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Plat_Raiva",
+          "persistentUuid": "ba4b41d3-bf4e-4f1c-9d27-fc3e1bda1324",
+          "width": 0,
+          "x": 4768,
+          "y": 384,
+          "zOrder": 52,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Plat_Raiva",
+          "persistentUuid": "b74b5974-4eeb-4eff-9584-0823c8fc229b",
+          "width": 0,
+          "x": 4864,
+          "y": 480,
+          "zOrder": 53,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Plat_Raiva",
+          "persistentUuid": "c514f5a8-d367-41dd-9c36-b3bd92f9bd28",
+          "width": 0,
+          "x": 4960,
+          "y": 416,
+          "zOrder": 54,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Raiva",
+          "persistentUuid": "acf679fa-5e3e-4fc2-b2c6-903b25dca9af",
+          "width": 284,
+          "x": 5060,
+          "y": 426.25640869140625,
+          "zOrder": 54,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 480,
+          "layer": "",
+          "name": "Back_Calma",
+          "persistentUuid": "5dc45aac-58b3-41f2-91bd-51dd67085e5d",
+          "width": 1472,
+          "x": 6880,
+          "y": 64,
+          "zOrder": 56,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 480,
+          "layer": "",
+          "name": "Back_Alegria",
+          "persistentUuid": "4d52f734-d7de-4919-b29f-59086e97c917",
+          "width": 1472,
+          "x": 5408,
+          "y": 64,
+          "zOrder": 57,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4477,6 +4828,50 @@
                               },
                               "parameters": [
                                 "Plat_Triste",
+                                "TopDownMovement",
+                                "+",
+                                "50"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TopDownMovementBehavior::MaxSpeed"
+                              },
+                              "parameters": [
+                                "Plat_Raiva",
+                                "TopDownMovement",
+                                "+",
+                                "50"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TopDownMovementBehavior::MaxSpeed"
+                              },
+                              "parameters": [
+                                "Lava_Raiva",
+                                "TopDownMovement",
+                                "+",
+                                "50"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TopDownMovementBehavior::MaxSpeed"
+                              },
+                              "parameters": [
+                                "BlocoLava_Raiva",
+                                "TopDownMovement",
+                                "+",
+                                "50"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TopDownMovementBehavior::MaxSpeed"
+                              },
+                              "parameters": [
+                                "Back_Raiva",
                                 "TopDownMovement",
                                 "+",
                                 "50"
@@ -5273,6 +5668,15 @@
               },
               "parameters": [
                 "GasVeneno_Calmo",
+                "TopDownMovement"
+              ]
+            },
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::SimulateLeftKey"
+              },
+              "parameters": [
+                "Back_Raiva",
                 "TopDownMovement"
               ]
             }
