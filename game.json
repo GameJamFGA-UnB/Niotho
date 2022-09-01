@@ -1914,6 +1914,159 @@
         "name": "8bef94249eeed8fd417cdfe517a69337.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Background Calmo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Background Calmo.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Nome sprite.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Nome sprite.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/MORTE/1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\MORTE\\1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/MORTE/2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\MORTE\\2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/MORTE/3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\MORTE\\3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/MORTE/4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\MORTE\\4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/MORTE/5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\MORTE\\5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/MORTE/6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\MORTE\\6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/MORTE/7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\MORTE\\7.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/MORTE/8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\MORTE\\8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/MORTE/9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\MORTE\\9.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/MORTE/10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\MORTE\\10.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/MORTE/11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\MORTE\\11.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/MORTE/12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\MORTE\\12.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/MORTE/13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\MORTE\\13.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/MORTE/14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\MORTE\\14.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/MORTE/15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\MORTE\\15.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2077,6 +2230,13 @@
       "variables": [],
       "effects": [],
       "behaviors": [
+        {
+          "canBeGrabbed": false,
+          "name": "Platform",
+          "platformType": "NormalPlatform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "yGrabOffset": 0
+        },
         {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
@@ -2624,7 +2784,7 @@
       "height": 32,
       "name": "Back_Calma",
       "tags": "",
-      "texture": "2acb957afedc551e881eaeb76c7d5b5a.png",
+      "texture": "assets\\Background Calmo.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
       "variables": [],
@@ -3556,8 +3716,8 @@
               "timeBetweenFrames": 0.10000000149011612,
               "sprites": [
                 {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets\\1.png",
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\MORTE\\1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -3570,7 +3730,530 @@
                     "x": 0,
                     "y": 0
                   },
-                  "customCollisionMask": []
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7.491155624389648,
+                        "y": 7.3873820304870605
+                      },
+                      {
+                        "x": 20.981721878051758,
+                        "y": 6.142098903656006
+                      },
+                      {
+                        "x": 27.00058937072754,
+                        "y": 22.745872497558594
+                      },
+                      {
+                        "x": 2.9251179695129395,
+                        "y": 22.953420639038086
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\MORTE\\2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7.491155624389648,
+                        "y": 7.3873820304870605
+                      },
+                      {
+                        "x": 20.981721878051758,
+                        "y": 6.142098903656006
+                      },
+                      {
+                        "x": 27.00058937072754,
+                        "y": 22.745872497558594
+                      },
+                      {
+                        "x": 2.9251179695129395,
+                        "y": 22.953420639038086
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\MORTE\\3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7.491155624389648,
+                        "y": 7.3873820304870605
+                      },
+                      {
+                        "x": 20.981721878051758,
+                        "y": 6.142098903656006
+                      },
+                      {
+                        "x": 27.00058937072754,
+                        "y": 22.745872497558594
+                      },
+                      {
+                        "x": 2.9251179695129395,
+                        "y": 22.953420639038086
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\MORTE\\4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7.491155624389648,
+                        "y": 7.3873820304870605
+                      },
+                      {
+                        "x": 20.981721878051758,
+                        "y": 6.142098903656006
+                      },
+                      {
+                        "x": 27.00058937072754,
+                        "y": 22.745872497558594
+                      },
+                      {
+                        "x": 2.9251179695129395,
+                        "y": 22.953420639038086
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\MORTE\\5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7.491155624389648,
+                        "y": 7.3873820304870605
+                      },
+                      {
+                        "x": 20.981721878051758,
+                        "y": 6.142098903656006
+                      },
+                      {
+                        "x": 27.00058937072754,
+                        "y": 22.745872497558594
+                      },
+                      {
+                        "x": 2.9251179695129395,
+                        "y": 22.953420639038086
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\MORTE\\6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7.491155624389648,
+                        "y": 7.3873820304870605
+                      },
+                      {
+                        "x": 20.981721878051758,
+                        "y": 6.142098903656006
+                      },
+                      {
+                        "x": 27.00058937072754,
+                        "y": 22.745872497558594
+                      },
+                      {
+                        "x": 2.9251179695129395,
+                        "y": 22.953420639038086
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\MORTE\\7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7.491155624389648,
+                        "y": 7.3873820304870605
+                      },
+                      {
+                        "x": 20.981721878051758,
+                        "y": 6.142098903656006
+                      },
+                      {
+                        "x": 27.00058937072754,
+                        "y": 22.745872497558594
+                      },
+                      {
+                        "x": 2.9251179695129395,
+                        "y": 22.953420639038086
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\MORTE\\8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7.491155624389648,
+                        "y": 7.3873820304870605
+                      },
+                      {
+                        "x": 20.981721878051758,
+                        "y": 6.142098903656006
+                      },
+                      {
+                        "x": 27.00058937072754,
+                        "y": 22.745872497558594
+                      },
+                      {
+                        "x": 2.9251179695129395,
+                        "y": 22.953420639038086
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\MORTE\\9.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7.491155624389648,
+                        "y": 7.3873820304870605
+                      },
+                      {
+                        "x": 20.981721878051758,
+                        "y": 6.142098903656006
+                      },
+                      {
+                        "x": 27.00058937072754,
+                        "y": 22.745872497558594
+                      },
+                      {
+                        "x": 2.9251179695129395,
+                        "y": 22.953420639038086
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\MORTE\\10.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7.491155624389648,
+                        "y": 7.3873820304870605
+                      },
+                      {
+                        "x": 20.981721878051758,
+                        "y": 6.142098903656006
+                      },
+                      {
+                        "x": 27.00058937072754,
+                        "y": 22.745872497558594
+                      },
+                      {
+                        "x": 2.9251179695129395,
+                        "y": 22.953420639038086
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\MORTE\\11.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7.491155624389648,
+                        "y": 7.3873820304870605
+                      },
+                      {
+                        "x": 20.981721878051758,
+                        "y": 6.142098903656006
+                      },
+                      {
+                        "x": 27.00058937072754,
+                        "y": 22.745872497558594
+                      },
+                      {
+                        "x": 2.9251179695129395,
+                        "y": 22.953420639038086
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\MORTE\\12.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7.491155624389648,
+                        "y": 7.3873820304870605
+                      },
+                      {
+                        "x": 20.981721878051758,
+                        "y": 6.142098903656006
+                      },
+                      {
+                        "x": 27.00058937072754,
+                        "y": 22.745872497558594
+                      },
+                      {
+                        "x": 2.9251179695129395,
+                        "y": 22.953420639038086
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\MORTE\\13.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7.491155624389648,
+                        "y": 7.3873820304870605
+                      },
+                      {
+                        "x": 20.981721878051758,
+                        "y": 6.142098903656006
+                      },
+                      {
+                        "x": 27.00058937072754,
+                        "y": 22.745872497558594
+                      },
+                      {
+                        "x": 2.9251179695129395,
+                        "y": 22.953420639038086
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\MORTE\\14.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7.491155624389648,
+                        "y": 7.3873820304870605
+                      },
+                      {
+                        "x": 20.981721878051758,
+                        "y": 6.142098903656006
+                      },
+                      {
+                        "x": 27.00058937072754,
+                        "y": 22.745872497558594
+                      },
+                      {
+                        "x": 2.9251179695129395,
+                        "y": 22.953420639038086
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\MORTE\\15.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7.491155624389648,
+                        "y": 7.3873820304870605
+                      },
+                      {
+                        "x": 20.981721878051758,
+                        "y": 6.142098903656006
+                      },
+                      {
+                        "x": 27.00058937072754,
+                        "y": 22.745872497558594
+                      },
+                      {
+                        "x": 2.9251179695129395,
+                        "y": 22.953420639038086
+                      }
+                    ]
+                  ]
                 }
               ]
             }
@@ -3744,15 +4427,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 128,
           "layer": "",
-          "name": "Title",
-          "persistentUuid": "91806bf6-9b87-42d5-9d32-9dc86946d0a6",
-          "width": 0,
+          "name": "Niotho",
+          "persistentUuid": "967f1dfc-9e1e-47d4-b456-13327cec3389",
+          "width": 256,
           "x": 352,
-          "y": 224,
-          "zOrder": 43,
+          "y": 192,
+          "zOrder": 42,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3793,6 +4476,47 @@
             "g": 0,
             "r": 0
           }
+        },
+        {
+          "assetStoreId": "",
+          "name": "Niotho",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Niotho",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.07999999821186066,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Nome sprite.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -3927,7 +4651,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.3850000000000001,
+        "zoomFactor": 0.5450000000000002,
         "windowMask": false
       },
       "objectsGroups": [
@@ -4246,7 +4970,7 @@
           "persistentUuid": "4d60f697-a4b4-4fe0-abf7-4585a23ea27e",
           "width": 1760,
           "x": 0,
-          "y": 480,
+          "y": 640,
           "zOrder": 39,
           "numberProperties": [],
           "stringProperties": [],
@@ -4491,12 +5215,27 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "gameOver",
+          "persistentUuid": "cebdbfb1-18e1-484e-b630-61284205d684",
+          "width": 0,
+          "x": 367,
+          "y": 235,
+          "zOrder": 58,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
         {
           "assetStoreId": "",
-          "bold": false,
+          "bold": true,
           "italic": false,
           "name": "gameOver",
           "smoothed": true,
@@ -4504,11 +5243,39 @@
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
-          "effects": [],
-          "behaviors": [],
+          "effects": [
+            {
+              "effectType": "Bevel",
+              "name": "Effect",
+              "doubleParameters": {
+                "distance": 15,
+                "lightAlpha": 1,
+                "rotation": 1,
+                "shadowAlpha": 1,
+                "thickness": 2
+              },
+              "stringParameters": {
+                "lightColor": "#ffffff",
+                "shadowColor": "#000000"
+              },
+              "booleanParameters": {}
+            }
+          ],
+          "behaviors": [
+            {
+              "bottomEdgeAnchor": 2,
+              "leftEdgeAnchor": 1,
+              "name": "Anchor",
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 2,
+              "topEdgeAnchor": 1,
+              "type": "AnchorBehavior::AnchorBehavior",
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
           "string": "GAME OVER",
           "font": "assets\\dpcomic.ttf",
-          "characterSize": 30,
+          "characterSize": 50,
           "color": {
             "b": 0,
             "g": 0,
@@ -4597,6 +5364,14 @@
                 "GameStatus",
                 "=",
                 "\"Playing\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "gameOver"
               ]
             }
           ]
@@ -5385,18 +6160,6 @@
                                 "",
                                 "\"obstacle_spawn\""
                               ]
-                            },
-                            {
-                              "type": {
-                                "value": "Create"
-                              },
-                              "parameters": [
-                                "",
-                                "gameOver",
-                                "CameraCenterX()",
-                                "CameraCenterY()",
-                                ""
-                              ]
                             }
                           ],
                           "events": [
@@ -5405,13 +6168,11 @@
                               "conditions": [
                                 {
                                   "type": {
-                                    "value": "CompareTimer"
+                                    "value": "AnimationName"
                                   },
                                   "parameters": [
-                                    "",
-                                    "\"GoGameOver\"",
-                                    "<=",
-                                    "3"
+                                    "Slimesito",
+                                    "\"Dead\""
                                   ]
                                 }
                               ],
@@ -5435,22 +6196,6 @@
                                 },
                                 {
                                   "type": {
-                                    "value": "Scene"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "\"Game Over\"",
-                                    ""
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [],
-                              "actions": [
-                                {
-                                  "type": {
                                     "value": "PlaySound"
                                   },
                                   "parameters": [
@@ -5463,11 +6208,10 @@
                                 },
                                 {
                                   "type": {
-                                    "value": "Scene"
+                                    "value": "Montre"
                                   },
                                   "parameters": [
-                                    "",
-                                    "\"Game Over\"",
+                                    "gameOver",
                                     ""
                                   ]
                                 }
@@ -5628,9 +6372,72 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 79,
+          "layer": "",
+          "name": "NewText",
+          "persistentUuid": "89f70098-7814-4bed-a924-793079ec5097",
+          "width": 296,
+          "x": 339,
+          "y": 174,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "NewSprite",
+          "persistentUuid": "6dddffc8-ba19-466b-b7d0-f8c42a753e22",
+          "width": 0,
+          "x": 736,
+          "y": 251,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
-      "objects": [],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "NewText",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Game Over",
+          "font": "assets\\dpcomic.ttf",
+          "characterSize": 70,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "NewSprite",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": []
+        }
+      ],
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
