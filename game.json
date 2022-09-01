@@ -2674,11 +2674,6 @@
           "useLegacyBottomAndRightAnchors": true
         },
         {
-          "extraBorder": 0,
-          "name": "DestruirFora",
-          "type": "DestroyOutsideBehavior::DestroyOutside"
-        },
-        {
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
           "gravity": 2300,
@@ -3621,7 +3616,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.3715999999999997,
+        "zoomFactor": 0.8247999999999998,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3932,7 +3927,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.3393999999999999,
+        "zoomFactor": 0.3850000000000001,
         "windowMask": false
       },
       "objectsGroups": [
@@ -4025,8 +4020,8 @@
           "name": "Plat_Triste",
           "persistentUuid": "9beab42c-e421-4336-afee-da0b8f5aa8ed",
           "width": 96,
-          "x": 1793,
-          "y": 352,
+          "x": 1792,
+          "y": 384,
           "zOrder": 39,
           "numberProperties": [],
           "stringProperties": [],
@@ -4040,8 +4035,8 @@
           "name": "Plat_Triste",
           "persistentUuid": "6bc9d113-a9f7-4b15-b4a1-afb5558c0a40",
           "width": 96,
-          "x": 1953,
-          "y": 288,
+          "x": 1920,
+          "y": 320,
           "zOrder": 39,
           "numberProperties": [],
           "stringProperties": [],
@@ -4073,21 +4068,6 @@
           "x": 2273,
           "y": 224,
           "zOrder": 39,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 32,
-          "layer": "",
-          "name": "Piso_Triste3",
-          "persistentUuid": "131df338-27d8-4ee7-a787-517d73372d88",
-          "width": 352,
-          "x": 1440,
-          "y": 448,
-          "zOrder": 37,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4264,7 +4244,7 @@
           "layer": "",
           "name": "Plat_Triste",
           "persistentUuid": "4d60f697-a4b4-4fe0-abf7-4585a23ea27e",
-          "width": 1440,
+          "width": 1760,
           "x": 0,
           "y": 480,
           "zOrder": 39,
@@ -5313,18 +5293,20 @@
                           "conditions": [
                             {
                               "type": {
-                                "value": "BuiltinCommonInstructions::And"
+                                "value": "BuiltinCommonInstructions::Or"
                               },
                               "parameters": [],
                               "subInstructions": [
                                 {
                                   "type": {
-                                    "value": "BoundingBoxBottom"
+                                    "value": "CollisionNP"
                                   },
                                   "parameters": [
                                     "Slimesito",
-                                    ">",
-                                    "Platform.BoundingBoxCenterY()"
+                                    "",
+                                    "",
+                                    "",
+                                    ""
                                   ]
                                 },
                                 {
@@ -5333,7 +5315,31 @@
                                   },
                                   "parameters": [
                                     "Slimesito",
+                                    "Piso_Triste3",
                                     "",
+                                    "",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "CollisionNP"
+                                  },
+                                  "parameters": [
+                                    "Slimesito",
+                                    "Agua_Triste",
+                                    "",
+                                    "",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "CollisionNP"
+                                  },
+                                  "parameters": [
+                                    "Slimesito",
+                                    "Lava_Raiva",
                                     "",
                                     "",
                                     ""
@@ -5396,7 +5402,19 @@
                           "events": [
                             {
                               "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [],
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "CompareTimer"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "\"GoGameOver\"",
+                                    "<=",
+                                    "3"
+                                  ]
+                                }
+                              ],
                               "actions": [
                                 {
                                   "type": {
@@ -5413,6 +5431,16 @@
                                   },
                                   "parameters": [
                                     "MovingObjects"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Scene"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "\"Game Over\"",
+                                    ""
                                   ]
                                 }
                               ]
@@ -5431,6 +5459,16 @@
                                     "",
                                     "30",
                                     "0.5"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Scene"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "\"Game Over\"",
+                                    ""
                                   ]
                                 }
                               ]
@@ -5525,6 +5563,102 @@
           "name": "CenterCamera",
           "visibility": true,
           "cameras": [],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior"
+        },
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior"
+        },
+        {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior"
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Game_32Over",
+      "name": "Game Over",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.6999999999999997,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 539,
+          "layer": "",
+          "name": "Back_Triste",
+          "persistentUuid": "80cec791-c041-4404-b069-8673233e2258",
+          "width": 958,
+          "x": 1,
+          "y": -1,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 6788568,
+          "ambientLightColorG": 6788568,
+          "ambientLightColorR": 1597066561,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
           "effects": []
         }
       ],
