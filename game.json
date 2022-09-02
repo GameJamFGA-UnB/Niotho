@@ -2160,6 +2160,15 @@
         "name": "assets\\gameOver.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Espinho_triste.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Espinho_triste.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -4869,7 +4878,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.6899999999999998,
+        "zoomFactor": 0.8699999999999999,
         "windowMask": false
       },
       "objectsGroups": [
@@ -5741,8 +5750,8 @@
           "layer": "",
           "name": "Plat_Triste",
           "persistentUuid": "1ec37c64-1336-4099-be19-7180fa6f1863",
-          "width": 96,
-          "x": 9888,
+          "width": 128,
+          "x": 9904,
           "y": 352,
           "zOrder": 72,
           "numberProperties": [],
@@ -5752,12 +5761,12 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 32,
+          "height": 16,
           "layer": "",
           "name": "Plat_Triste",
           "persistentUuid": "9867b620-5310-49de-a30f-41ef56cd9d25",
-          "width": 64,
-          "x": 10048,
+          "width": 80,
+          "x": 10064,
           "y": 416,
           "zOrder": 74,
           "numberProperties": [],
@@ -5782,13 +5791,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 32,
+          "height": 16,
           "layer": "",
           "name": "Plat_Triste",
           "persistentUuid": "f90136d1-fb71-4821-8949-35285837226e",
-          "width": 119,
-          "x": 10153,
-          "y": 464,
+          "width": 80,
+          "x": 10160,
+          "y": 432,
           "zOrder": 74,
           "numberProperties": [],
           "stringProperties": [],
@@ -5797,28 +5806,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 32,
+          "height": 16,
           "layer": "",
           "name": "Plat_Triste",
           "persistentUuid": "126cc3a7-0272-4394-8b42-37bd125415f3",
-          "width": 64,
-          "x": 10272,
-          "y": 480,
-          "zOrder": 74,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 32,
-          "layer": "",
-          "name": "Plat_Triste",
-          "persistentUuid": "7a369ed6-68b1-428f-a1ad-ef24b4293dd2",
-          "width": 128,
-          "x": 10336,
-          "y": 464,
+          "width": 80,
+          "x": 10256,
+          "y": 448,
           "zOrder": 74,
           "numberProperties": [],
           "stringProperties": [],
@@ -6015,6 +6009,51 @@
           "x": 14976,
           "y": -96,
           "zOrder": 77,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Espinho_Triste",
+          "persistentUuid": "15579ff9-34b0-420b-8db6-83b8a440dcc6",
+          "width": 384,
+          "x": 2464,
+          "y": 192,
+          "zOrder": 78,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 224,
+          "layer": "",
+          "name": "NewSprite",
+          "persistentUuid": "ee0123f4-f564-4bda-8567-533a9cd20cc3",
+          "width": 32,
+          "x": 10352,
+          "y": 272,
+          "zOrder": 79,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 128,
+          "layer": "",
+          "name": "desculpas",
+          "persistentUuid": "00507554-d3fb-4e95-8735-615f7df7baaa",
+          "width": 192,
+          "x": 10224,
+          "y": 272,
+          "zOrder": 80,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6246,6 +6285,78 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "Espinho_Triste",
+          "tags": "",
+          "texture": "assets\\Espinho_triste.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "canBeGrabbed": false,
+              "name": "Platform",
+              "platformType": "NormalPlatform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            },
+            {
+              "acceleration": 400,
+              "allowDiagonals": false,
+              "angleOffset": 0,
+              "angularMaxSpeed": 180,
+              "customIsometryAngle": 30,
+              "deceleration": 800,
+              "ignoreDefaultControls": true,
+              "maxSpeed": 200,
+              "movementAngleOffset": -45,
+              "name": "TopDownMovement",
+              "rotateObject": false,
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "viewpoint": "CustomIsometry"
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "desculpas",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "acceleration": 400,
+              "allowDiagonals": false,
+              "angleOffset": 0,
+              "angularMaxSpeed": 180,
+              "customIsometryAngle": 30,
+              "deceleration": 800,
+              "ignoreDefaultControls": true,
+              "maxSpeed": 200,
+              "movementAngleOffset": -45,
+              "name": "TopDownMovement",
+              "rotateObject": false,
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "viewpoint": "CustomIsometry"
+            }
+          ],
+          "string": "Não conseguimos terminar essa fase, pule aqui para ir para a próxima! ->\n🥺",
+          "font": "assets\\dpcomic.ttf",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
       "events": [
@@ -6555,6 +6666,28 @@
                               },
                               "parameters": [
                                 "Plat_Triste",
+                                "TopDownMovement",
+                                "+",
+                                "50"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TopDownMovementBehavior::MaxSpeed"
+                              },
+                              "parameters": [
+                                "desculpas",
+                                "TopDownMovement",
+                                "+",
+                                "50"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TopDownMovementBehavior::MaxSpeed"
+                              },
+                              "parameters": [
+                                "NewSprite",
                                 "TopDownMovement",
                                 "+",
                                 "50"
@@ -6944,6 +7077,18 @@
                                     "",
                                     ""
                                   ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "CollisionNP"
+                                  },
+                                  "parameters": [
+                                    "Slimesito",
+                                    "Espinho_Triste",
+                                    "",
+                                    "",
+                                    ""
+                                  ]
                                 }
                               ]
                             }
@@ -7319,6 +7464,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "continue",
+          "persistentUuid": "9f10afbb-7896-4f2f-bf63-065c14532748",
+          "width": 0,
+          "x": 320,
+          "y": 512,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -7408,6 +7568,27 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "continue",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "pressione qualquer botão para continuar",
+          "font": "assets\\dpcomic.ttf",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
       "events": [
@@ -7422,6 +7603,31 @@
               "parameters": [
                 "Slimesito",
                 "\"Dead\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnyKeyPressed"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Game\"",
+                ""
               ]
             }
           ]
@@ -7725,6 +7931,24 @@
               },
               "parameters": [
                 "NewSprite",
+                "TopDownMovement"
+              ]
+            },
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::SimulateLeftKey"
+              },
+              "parameters": [
+                "Espinho_Triste",
+                "TopDownMovement"
+              ]
+            },
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::SimulateLeftKey"
+              },
+              "parameters": [
+                "desculpas",
                 "TopDownMovement"
               ]
             }
