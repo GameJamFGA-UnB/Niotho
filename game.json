@@ -2142,6 +2142,16 @@
         "name": "assets\\background_calma.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "assets/musica_raiva.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\musica_raiva.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2313,10 +2323,10 @@
       "effects": [],
       "behaviors": [
         {
-          "canBeGrabbed": false,
           "name": "Platform",
-          "platformType": "NormalPlatform",
           "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": false,
+          "platformType": "NormalPlatform",
           "yGrabOffset": 0
         },
         {
@@ -2804,10 +2814,10 @@
           "useLegacyBottomAndRightAnchors": true
         },
         {
-          "gravity": 1800,
-          "jumpSpeed": 1000,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "gravity": 1800,
+          "jumpSpeed": 1000,
           "ignoreDefaultControls": true,
           "jumpSustainTime": 0,
           "maxSpeed": 1e+27,
@@ -4241,6 +4251,8 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 400,
           "allowDiagonals": false,
           "angleOffset": 0,
@@ -4250,9 +4262,7 @@
           "ignoreDefaultControls": true,
           "maxSpeed": 200,
           "movementAngleOffset": -45,
-          "name": "TopDownMovement",
           "rotateObject": false,
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "viewpoint": "CustomIsometry"
         }
       ],
@@ -4806,6 +4816,1703 @@
               "width": 0
             }
           ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior"
+        },
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior"
+        },
+        {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior"
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Fase_32Raiva",
+      "name": "Fase Raiva",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": true,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": true,
+        "zoomFactor": 0.4199999999999998,
+        "windowMask": false
+      },
+      "objectsGroups": [
+        {
+          "name": "TouchScreenTutorial",
+          "objects": []
+        },
+        {
+          "name": "TutorialObjects",
+          "objects": []
+        },
+        {
+          "name": "MovingObjects",
+          "objects": []
+        }
+      ],
+      "variables": [
+        {
+          "name": "ObstacleType",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "GameStatus",
+          "type": "string",
+          "value": "Preparing"
+        },
+        {
+          "name": "PlayerName",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "ObstacleSpeed",
+          "type": "number",
+          "value": 550
+        },
+        {
+          "name": "ObstacleSpawnDelay",
+          "type": "string",
+          "value": "2"
+        },
+        {
+          "name": "CactusInField",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "SpawnedCactusInField",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "Slimesito",
+          "persistentUuid": "4355f663-4fd5-41b2-83c2-2c5f313938d9",
+          "width": 68.7876205444336,
+          "x": 95.8901596069336,
+          "y": -64.99408721923828,
+          "zOrder": 34,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "gameOver",
+          "persistentUuid": "cebdbfb1-18e1-484e-b630-61284205d684",
+          "width": 0,
+          "x": 367,
+          "y": 235,
+          "zOrder": 58,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "playerSpawn",
+          "persistentUuid": "aa1b3f17-9a1c-4b6c-bc80-4d3cdebc7d9d",
+          "width": 64,
+          "x": 96,
+          "y": -64,
+          "zOrder": 59,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 544,
+          "layer": "Background",
+          "name": "Back_Raiva",
+          "persistentUuid": "7a7e93d7-14f3-48f9-b79c-aa788d658af4",
+          "width": 960,
+          "x": 0,
+          "y": 0,
+          "zOrder": 70,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 544,
+          "layer": "Background",
+          "name": "Back_Raiva",
+          "persistentUuid": "c5d5b269-104a-42a5-bb38-3de5795976a1",
+          "width": 960,
+          "x": 0,
+          "y": 0,
+          "zOrder": 70,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 544,
+          "layer": "Background",
+          "name": "Back_Raiva",
+          "persistentUuid": "28ef4a9a-8c08-4d1b-bf77-d8c7945eb2e0",
+          "width": 960,
+          "x": 0,
+          "y": 0,
+          "zOrder": 70,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 544,
+          "layer": "Background",
+          "name": "Back_Raiva",
+          "persistentUuid": "f0b1feb7-ffb0-4a5b-b49a-f1917b93b749",
+          "width": 960,
+          "x": 960,
+          "y": 0,
+          "zOrder": 70,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 544,
+          "layer": "Background",
+          "name": "Back_Raiva",
+          "persistentUuid": "626f16f3-8720-4424-843f-5732adeda470",
+          "width": 960,
+          "x": 1920,
+          "y": 0,
+          "zOrder": 70,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 544,
+          "layer": "Background",
+          "name": "Back_Raiva",
+          "persistentUuid": "5dcd5d4a-3018-4249-95e5-3ff85389b5a0",
+          "width": 960,
+          "x": 2880,
+          "y": 0,
+          "zOrder": 70,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 544,
+          "layer": "Background",
+          "name": "Back_Raiva",
+          "persistentUuid": "02cf3269-3f43-41e1-bc1c-c26d5f0626c7",
+          "width": 960,
+          "x": 3840,
+          "y": 0,
+          "zOrder": 70,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 544,
+          "layer": "Background",
+          "name": "Back_Raiva",
+          "persistentUuid": "67ff6aab-58a2-45ce-aeb9-c5fb7856a8a3",
+          "width": 960,
+          "x": 4800,
+          "y": 0,
+          "zOrder": 70,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 544,
+          "layer": "Background",
+          "name": "Back_Raiva",
+          "persistentUuid": "7d387b88-4675-49e6-a762-dd125924bd8e",
+          "width": 960,
+          "x": 5760,
+          "y": 0,
+          "zOrder": 70,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 544,
+          "layer": "Background",
+          "name": "Back_Raiva",
+          "persistentUuid": "1907a02f-60ab-45a8-abc4-03f8e590639f",
+          "width": 960,
+          "x": 6720,
+          "y": 0,
+          "zOrder": 70,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 544,
+          "layer": "Background",
+          "name": "Back_Raiva",
+          "persistentUuid": "5db8ed33-e4a6-4a70-a3c0-294df09cb333",
+          "width": 960,
+          "x": 7680,
+          "y": 0,
+          "zOrder": 70,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 544,
+          "layer": "Background",
+          "name": "Back_Raiva",
+          "persistentUuid": "18923497-e1c7-4d5c-ad43-7d6f83beb688",
+          "width": 960,
+          "x": 8640,
+          "y": 0,
+          "zOrder": 70,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "gameOver",
+          "persistentUuid": "24ca86d7-7f5c-4345-a146-f866a9ca7732",
+          "width": 0,
+          "x": 367,
+          "y": 235,
+          "zOrder": 58,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 544,
+          "layer": "",
+          "name": "Back_Raiva",
+          "persistentUuid": "d07212d2-17b6-4254-a2f7-c99171591624",
+          "width": 960,
+          "x": 960,
+          "y": 0,
+          "zOrder": 70,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 544,
+          "layer": "",
+          "name": "Back_Raiva",
+          "persistentUuid": "4c5d2841-8681-4141-a694-048cd91572f4",
+          "width": 960,
+          "x": 960,
+          "y": 0,
+          "zOrder": 70,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 544,
+          "layer": "",
+          "name": "Back_Raiva",
+          "persistentUuid": "65e58e32-d422-44e1-9a31-0c13c924b0d8",
+          "width": 960,
+          "x": 960,
+          "y": 0,
+          "zOrder": 70,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Lava_Raiva",
+          "persistentUuid": "23179b35-7804-4177-a28b-887aa622ce8c",
+          "width": 9600,
+          "x": 0,
+          "y": 512,
+          "zOrder": 71,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "gameOver",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [
+            {
+              "effectType": "Bevel",
+              "name": "Effect",
+              "doubleParameters": {
+                "distance": 15,
+                "lightAlpha": 1,
+                "rotation": 1,
+                "shadowAlpha": 1,
+                "thickness": 2
+              },
+              "stringParameters": {
+                "lightColor": "#ffffff",
+                "shadowColor": "#000000"
+              },
+              "booleanParameters": {}
+            }
+          ],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 2,
+              "leftEdgeAnchor": 1,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 2,
+              "topEdgeAnchor": 1,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "string": "GAME OVER",
+          "font": "assets\\dpcomic.ttf",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "Follow",
+          "tags": "",
+          "texture": "assets\\Follow.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "TopDownMovement",
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "acceleration": 400,
+              "allowDiagonals": false,
+              "angleOffset": 0,
+              "angularMaxSpeed": 180,
+              "customIsometryAngle": 30,
+              "deceleration": 800,
+              "ignoreDefaultControls": true,
+              "maxSpeed": 200,
+              "movementAngleOffset": 0,
+              "rotateObject": false,
+              "viewpoint": "TopDown"
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "playerSpawn",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": []
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "pressDown",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "TopDownMovement",
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "acceleration": 400,
+              "allowDiagonals": false,
+              "angleOffset": 0,
+              "angularMaxSpeed": 180,
+              "customIsometryAngle": 30,
+              "deceleration": 800,
+              "ignoreDefaultControls": true,
+              "maxSpeed": 200,
+              "movementAngleOffset": -45,
+              "rotateObject": false,
+              "viewpoint": "CustomIsometry"
+            }
+          ],
+          "string": "hold ↓ to duck ",
+          "font": "assets\\dpcomic.ttf",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "pressUp",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "TopDownMovement",
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "acceleration": 400,
+              "allowDiagonals": false,
+              "angleOffset": 0,
+              "angularMaxSpeed": 180,
+              "customIsometryAngle": 30,
+              "deceleration": 800,
+              "ignoreDefaultControls": true,
+              "maxSpeed": 200,
+              "movementAngleOffset": -45,
+              "rotateObject": false,
+              "viewpoint": "CustomIsometry"
+            }
+          ],
+          "string": "press ↑ to jump",
+          "font": "assets\\dpcomic.ttf",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "NewSprite",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Platform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": false,
+              "platformType": "NormalPlatform",
+              "yGrabOffset": 0
+            },
+            {
+              "name": "TopDownMovement",
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "acceleration": 400,
+              "allowDiagonals": false,
+              "angleOffset": 0,
+              "angularMaxSpeed": 180,
+              "customIsometryAngle": 30,
+              "deceleration": 800,
+              "ignoreDefaultControls": true,
+              "maxSpeed": 200,
+              "movementAngleOffset": -45,
+              "rotateObject": false,
+              "viewpoint": "CustomIsometry"
+            }
+          ],
+          "animations": [
+            {
+              "name": "Follow",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.07999999821186066,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Follow.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "Slimesito",
+                "\"Run\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Slimesito",
+                "PlatformerObject",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "assets\\musica_raiva.mp3",
+                "no",
+                "50",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "GameStatus",
+                "=",
+                "\"Playing\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "gameOver"
+              ]
+            }
+          ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 74,
+          "colorR": 194,
+          "creationTime": 0,
+          "name": "Game states",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "colorB": 228,
+              "colorG": 196,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Preparando para começar",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarSceneTxt"
+                      },
+                      "parameters": [
+                        "GameStatus",
+                        "=",
+                        "\"Preparing\""
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "AnyKeyPressed"
+                              },
+                              "parameters": [
+                                ""
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarSceneTxt"
+                          },
+                          "parameters": [
+                            "GameStatus",
+                            "=",
+                            "\"Playing\""
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetAnimationName"
+                              },
+                              "parameters": [
+                                "Slimesito",
+                                "\"Run\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ActivateBehavior"
+                              },
+                              "parameters": [
+                                "Slimesito",
+                                "PlatformerObject",
+                                "yes"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Jogando",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarSceneTxt"
+                      },
+                      "parameters": [
+                        "GameStatus",
+                        "=",
+                        "\"Playing\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TiledSpriteObject::XOffset"
+                      },
+                      "parameters": [
+                        "Agua_Triste",
+                        "-",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TiledSpriteObject::XOffset"
+                      },
+                      "parameters": [
+                        "BlocoLava_Raiva",
+                        "-",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "name": "Acelerando de acordo com o piso",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CollisionNP"
+                              },
+                              "parameters": [
+                                "Slimesito",
+                                "Piso_Triste1",
+                                "",
+                                "",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Piso_Triste1",
+                                "pisouUmaVez",
+                                "<=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "Piso_Triste1",
+                                "pisouUmaVez",
+                                "=",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TopDownMovementBehavior::MaxSpeed"
+                              },
+                              "parameters": [
+                                "Piso_Triste1",
+                                "TopDownMovement",
+                                "+",
+                                "50"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TopDownMovementBehavior::MaxSpeed"
+                              },
+                              "parameters": [
+                                "Back_Triste",
+                                "TopDownMovement",
+                                "+",
+                                "50"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TopDownMovementBehavior::MaxSpeed"
+                              },
+                              "parameters": [
+                                "Agua_Triste",
+                                "TopDownMovement",
+                                "+",
+                                "50"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TopDownMovementBehavior::MaxSpeed"
+                              },
+                              "parameters": [
+                                "Plat_Triste",
+                                "TopDownMovement",
+                                "+",
+                                "50"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TopDownMovementBehavior::MaxSpeed"
+                              },
+                              "parameters": [
+                                "Plat_Raiva",
+                                "TopDownMovement",
+                                "+",
+                                "50"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TopDownMovementBehavior::MaxSpeed"
+                              },
+                              "parameters": [
+                                "Lava_Raiva",
+                                "TopDownMovement",
+                                "+",
+                                "50"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TopDownMovementBehavior::MaxSpeed"
+                              },
+                              "parameters": [
+                                "BlocoLava_Raiva",
+                                "TopDownMovement",
+                                "+",
+                                "50"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TopDownMovementBehavior::MaxSpeed"
+                              },
+                              "parameters": [
+                                "Back_Raiva",
+                                "TopDownMovement",
+                                "+",
+                                "50"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TopDownMovementBehavior::MaxSpeed"
+                              },
+                              "parameters": [
+                                "Back_Alegria",
+                                "TopDownMovement",
+                                "+",
+                                "50"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "TopDownMovementBehavior::MaxSpeed"
+                              },
+                              "parameters": [
+                                "Back_Calma",
+                                "TopDownMovement",
+                                "+",
+                                "50"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Link",
+                          "include": {
+                            "includeConfig": 0
+                          },
+                          "target": "Move Mapa"
+                        }
+                      ],
+                      "parameters": []
+                    },
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "name": "Slime movements",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "colorB": 228,
+                          "colorG": 176,
+                          "colorR": 74,
+                          "creationTime": 0,
+                          "name": "Sounds",
+                          "source": "",
+                          "type": "BuiltinCommonInstructions::Group",
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "PlatformBehavior::IsJumping"
+                                  },
+                                  "parameters": [
+                                    "Slimesito",
+                                    "PlatformerObject"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "SetAnimationName"
+                                  },
+                                  "parameters": [
+                                    "Slimesito",
+                                    "\"Jump\""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "AnimationName"
+                                  },
+                                  "parameters": [
+                                    "Slimesito",
+                                    "\"Ducking\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "BuiltinCommonInstructions::Once"
+                                  },
+                                  "parameters": []
+                                }
+                              ],
+                              "actions": []
+                            }
+                          ],
+                          "parameters": []
+                        },
+                        {
+                          "colorB": 228,
+                          "colorG": 176,
+                          "colorR": 74,
+                          "creationTime": 0,
+                          "name": "Player FSM",
+                          "source": "",
+                          "type": "BuiltinCommonInstructions::Group",
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "KeyPressed"
+                                  },
+                                  "parameters": [
+                                    "Dino",
+                                    "Up"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "PlatformBehavior::SimulateJumpKey"
+                                  },
+                                  "parameters": [
+                                    "Slimesito",
+                                    "PlatformerObject"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "PlatformBehavior::IsOnFloor"
+                                  },
+                                  "parameters": [
+                                    "Slimesito",
+                                    "PlatformerObject"
+                                  ]
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "inverted": true,
+                                        "value": "KeyPressed"
+                                      },
+                                      "parameters": [
+                                        "Dino",
+                                        "Down"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "inverted": true,
+                                        "value": "PlatformBehavior::IsJumping"
+                                      },
+                                      "parameters": [
+                                        "Slimesito",
+                                        "PlatformerObject"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "SetAnimationName"
+                                      },
+                                      "parameters": [
+                                        "Slimesito",
+                                        "\"Run\""
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "KeyPressed"
+                                      },
+                                      "parameters": [
+                                        "Dino",
+                                        "Down"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "SetAnimationName"
+                                      },
+                                      "parameters": [
+                                        "Slimesito",
+                                        "\"Ducked\""
+                                      ]
+                                    }
+                                  ],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "KeyPressed"
+                                          },
+                                          "parameters": [
+                                            "Dino",
+                                            "Down"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "AnimationEnded"
+                                          },
+                                          "parameters": [
+                                            "Slimesito"
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "SetAnimationName"
+                                          },
+                                          "parameters": [
+                                            "Slimesito",
+                                            "\"Ducked\""
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Comment",
+                                      "color": {
+                                        "b": 109,
+                                        "g": 230,
+                                        "r": 255,
+                                        "textB": 0,
+                                        "textG": 0,
+                                        "textR": 0
+                                      },
+                                      "comment": "Exit conditions",
+                                      "comment2": ""
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "KeyReleased"
+                                          },
+                                          "parameters": [
+                                            "Slimesito",
+                                            "Down"
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [],
+                                      "events": [
+                                        {
+                                          "type": "BuiltinCommonInstructions::Standard",
+                                          "conditions": [
+                                            {
+                                              "type": {
+                                                "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                                              },
+                                              "parameters": [
+                                                "Slimesito",
+                                                "PlatformerObject"
+                                              ]
+                                            }
+                                          ],
+                                          "actions": [
+                                            {
+                                              "type": {
+                                                "value": "SetAnimationName"
+                                              },
+                                              "parameters": [
+                                                "Slimesito",
+                                                "\"Run\""
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "BuiltinCommonInstructions::Standard",
+                                          "conditions": [
+                                            {
+                                              "type": {
+                                                "value": "KeyPressed"
+                                              },
+                                              "parameters": [
+                                                "",
+                                                "Up"
+                                              ]
+                                            }
+                                          ],
+                                          "actions": [
+                                            {
+                                              "type": {
+                                                "value": "SetAnimationName"
+                                              },
+                                              "parameters": [
+                                                "Slimesito",
+                                                "\"Jump\""
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "parameters": []
+                        }
+                      ],
+                      "parameters": []
+                    },
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "folded": true,
+                      "name": "Game Over",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Link",
+                          "include": {
+                            "includeConfig": 0
+                          },
+                          "target": "Game Over"
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "Player loses when either of these conditions is checked :\n- Slimesito fell of the map\n- Slimesito collided with a Platform and is under it (= the played did not duck)",
+                          "comment2": ""
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Or"
+                              },
+                              "parameters": [],
+                              "subInstructions": [
+                                {
+                                  "type": {
+                                    "value": "CollisionNP"
+                                  },
+                                  "parameters": [
+                                    "Slimesito",
+                                    "",
+                                    "",
+                                    "",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "CollisionNP"
+                                  },
+                                  "parameters": [
+                                    "Slimesito",
+                                    "Piso_Triste3",
+                                    "",
+                                    "",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "CollisionNP"
+                                  },
+                                  "parameters": [
+                                    "Slimesito",
+                                    "Agua_Triste",
+                                    "",
+                                    "",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "CollisionNP"
+                                  },
+                                  "parameters": [
+                                    "Slimesito",
+                                    "Lava_Raiva",
+                                    "",
+                                    "",
+                                    ""
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::PlatformerObjectBehavior::AbortJump"
+                              },
+                              "parameters": [
+                                "Slimesito",
+                                "PlatformerObject"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetAnimationName"
+                              },
+                              "parameters": [
+                                "Slimesito",
+                                "\"Dead\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarSceneTxt"
+                              },
+                              "parameters": [
+                                "GameStatus",
+                                "=",
+                                "\"Dead\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PauseTimer"
+                              },
+                              "parameters": [
+                                "",
+                                "\"obstacle_spawn\""
+                              ]
+                            }
+                          ],
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "AnimationName"
+                                  },
+                                  "parameters": [
+                                    "Slimesito",
+                                    "\"Dead\""
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "AjoutObjConcern"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "MovingObjects"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Arreter"
+                                  },
+                                  "parameters": [
+                                    "MovingObjects"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "PlaySound"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "Death.mp3",
+                                    "",
+                                    "30",
+                                    "0.5"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Montre"
+                                  },
+                                  "parameters": [
+                                    "gameOver",
+                                    ""
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
+                    },
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "folded": true,
+                      "name": "Respawnando",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::And"
+                              },
+                              "parameters": [],
+                              "subInstructions": [
+                                {
+                                  "type": {
+                                    "value": "AnyKeyPressed"
+                                  },
+                                  "parameters": [
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "VarSceneTxt"
+                                  },
+                                  "parameters": [
+                                    "GameStatus",
+                                    "=",
+                                    "\"Dead\""
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PushScene"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Game\""
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
+                    },
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "name": "Muda Fase",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CollisionNP"
+                              },
+                              "parameters": [
+                                "Slimesito",
+                                "NewSprite",
+                                "",
+                                "",
+                                ""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Scene"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Intro\"",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "Espinho_Alegria",
+                                "CameraCenterX()",
+                                "CameraCenterY()",
+                                ""
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": []
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": -2147483616,
+          "ambientLightColorG": 6032144,
+          "ambientLightColorR": 6124984,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "Background",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 32,
+          "ambientLightColorG": 0,
+          "ambientLightColorR": 0,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 167800431,
+          "ambientLightColorG": 6034960,
+          "ambientLightColorR": 9655904,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "TouchButtons",
+          "visibility": false,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 167798124,
+          "ambientLightColorG": 6032144,
+          "ambientLightColorR": 8527640,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "Gameover UI",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 8839904,
+          "ambientLightColorG": 6043600,
+          "ambientLightColorR": 8022528,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "Falling",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 8048888,
+          "ambientLightColorG": 6043600,
+          "ambientLightColorR": 8848096,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "CenterCamera",
+          "visibility": true,
+          "cameras": [],
           "effects": []
         }
       ],
@@ -6048,13 +7755,13 @@
           ],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 2,
               "leftEdgeAnchor": 1,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 2,
               "topEdgeAnchor": 1,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             }
           ],
@@ -6119,6 +7826,8 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "TopDownMovement",
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "acceleration": 400,
               "allowDiagonals": false,
               "angleOffset": 0,
@@ -6128,9 +7837,7 @@
               "ignoreDefaultControls": true,
               "maxSpeed": 200,
               "movementAngleOffset": -45,
-              "name": "TopDownMovement",
               "rotateObject": false,
-              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "viewpoint": "CustomIsometry"
             }
           ],
@@ -6190,13 +7897,15 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": false,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": false,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             },
             {
+              "name": "TopDownMovement",
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "acceleration": 400,
               "allowDiagonals": false,
               "angleOffset": 0,
@@ -6206,9 +7915,7 @@
               "ignoreDefaultControls": true,
               "maxSpeed": 200,
               "movementAngleOffset": -45,
-              "name": "TopDownMovement",
               "rotateObject": false,
-              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "viewpoint": "CustomIsometry"
             }
           ],
