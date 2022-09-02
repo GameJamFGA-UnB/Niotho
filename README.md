@@ -24,13 +24,17 @@ Use fones de ouvido para uma experiência mais imersiva.
 
 ## Paletas
 
-![Paleta_Triste.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1b77d333-9465-4efc-bfe8-2a71d9f4315a/Paleta_Triste.png)
+### Triste
+![Paleta_Triste.png](assets/Paleta_Triste.png)
 
-![Paleta_Raiva.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0393a47a-3d09-4908-8905-15cfe0981600/Paleta_Raiva.png)
+### Raiva
+![Paleta_Raiva.png](assets/Paleta_Raiva.png)
 
-![Paleta_Feliz.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6ea5777c-e3e1-40d3-8986-c6b7a28c9710/Paleta_Feliz.png)
+### Alegria
+![Paleta_Feliz.png](assets/Paleta_Feliz.png)
 
-![Paleta_Calma.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fca9a564-2f8a-4310-a9b5-9f8ae01c9a2e/Paleta_Calma.png)
+### Calma
+![Paleta_Calma.png](assets/Paleta_Calma.png)
 
 ## 🎮 Engine & linguagens
 <!---
