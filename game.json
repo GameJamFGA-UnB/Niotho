@@ -1674,15 +1674,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Follow.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Follow.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Sprite Calmo/Piso 1.png",
         "kind": "image",
         "metadata": "",
@@ -2096,6 +2087,60 @@
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/background_triste.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\background_triste.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Background Triste 1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Background Triste 1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Follow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Follow.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/background_raiva.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\background_raiva.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/background_feliz.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\background_feliz.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/background_calma.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\background_calma.png",
+        "smoothed": true,
         "userAdded": true
       }
     ],
@@ -2715,118 +2760,6 @@
           "platformType": "NormalPlatform",
           "yGrabOffset": 0
         },
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-          "acceleration": 400,
-          "allowDiagonals": false,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "customIsometryAngle": 30,
-          "deceleration": 800,
-          "ignoreDefaultControls": true,
-          "maxSpeed": 200,
-          "movementAngleOffset": -45,
-          "rotateObject": false,
-          "viewpoint": "CustomIsometry"
-        }
-      ]
-    },
-    {
-      "assetStoreId": "",
-      "height": 32,
-      "name": "Back_Triste",
-      "tags": "",
-      "texture": "8bef94249eeed8fd417cdfe517a69337.png",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-          "acceleration": 400,
-          "allowDiagonals": false,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "customIsometryAngle": 30,
-          "deceleration": 800,
-          "ignoreDefaultControls": true,
-          "maxSpeed": 200,
-          "movementAngleOffset": -45,
-          "rotateObject": false,
-          "viewpoint": "CustomIsometry"
-        }
-      ]
-    },
-    {
-      "assetStoreId": "",
-      "height": 32,
-      "name": "Back_Raiva",
-      "tags": "",
-      "texture": "400_F_416618041_AXhSnjLvlrXR4CdjvadavQQIHbFxaEma.jpg",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-          "acceleration": 400,
-          "allowDiagonals": false,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "customIsometryAngle": 30,
-          "deceleration": 800,
-          "ignoreDefaultControls": true,
-          "maxSpeed": 200,
-          "movementAngleOffset": -45,
-          "rotateObject": false,
-          "viewpoint": "CustomIsometry"
-        }
-      ]
-    },
-    {
-      "assetStoreId": "",
-      "height": 32,
-      "name": "Back_Alegria",
-      "tags": "",
-      "texture": "15a5471b85022bbfc4195e259495653e.jpg",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-          "acceleration": 400,
-          "allowDiagonals": false,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "customIsometryAngle": 30,
-          "deceleration": 800,
-          "ignoreDefaultControls": true,
-          "maxSpeed": 200,
-          "movementAngleOffset": -45,
-          "rotateObject": false,
-          "viewpoint": "CustomIsometry"
-        }
-      ]
-    },
-    {
-      "assetStoreId": "",
-      "height": 32,
-      "name": "Back_Calma",
-      "tags": "",
-      "texture": "assets\\Background Calmo.png",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
         {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
@@ -4297,6 +4230,234 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Back_Triste",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "acceleration": 400,
+          "allowDiagonals": false,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "customIsometryAngle": 30,
+          "deceleration": 800,
+          "ignoreDefaultControls": true,
+          "maxSpeed": 200,
+          "movementAngleOffset": -45,
+          "name": "TopDownMovement",
+          "rotateObject": false,
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "viewpoint": "CustomIsometry"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\background_triste.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Back_Raiva",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "acceleration": 400,
+          "allowDiagonals": false,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "customIsometryAngle": 30,
+          "deceleration": 800,
+          "ignoreDefaultControls": true,
+          "maxSpeed": 200,
+          "movementAngleOffset": -45,
+          "rotateObject": false,
+          "viewpoint": "CustomIsometry"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\background_raiva.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Back_Alegria",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "acceleration": 400,
+          "allowDiagonals": false,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "customIsometryAngle": 30,
+          "deceleration": 800,
+          "ignoreDefaultControls": true,
+          "maxSpeed": 200,
+          "movementAngleOffset": -45,
+          "rotateObject": false,
+          "viewpoint": "CustomIsometry"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\background_feliz.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Back_Calma",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "acceleration": 400,
+          "allowDiagonals": false,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "customIsometryAngle": 30,
+          "deceleration": 800,
+          "ignoreDefaultControls": true,
+          "maxSpeed": 200,
+          "movementAngleOffset": -45,
+          "rotateObject": false,
+          "viewpoint": "CustomIsometry"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets\\background_calma.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsGroups": [],
@@ -4681,7 +4842,7 @@
       "title": "",
       "v": 209,
       "uiSettings": {
-        "grid": false,
+        "grid": true,
         "gridType": "rectangular",
         "gridWidth": 32,
         "gridHeight": 32,
@@ -4689,8 +4850,8 @@
         "gridOffsetY": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
-        "snap": false,
-        "zoomFactor": 0.31,
+        "snap": true,
+        "zoomFactor": 0.3699999999999998,
         "windowMask": false
       },
       "objectsGroups": [
@@ -4767,7 +4928,7 @@
           "layer": "Falling",
           "name": "Agua_Triste",
           "persistentUuid": "893ce0c7-60e1-487b-bf25-2959a2b3c46b",
-          "width": 12256,
+          "width": 13808,
           "x": 1440,
           "y": 512,
           "zOrder": 38,
@@ -4786,21 +4947,6 @@
           "x": 1856,
           "y": 320,
           "zOrder": 39,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 864,
-          "layer": "Background",
-          "name": "Back_Triste",
-          "persistentUuid": "8ebc80f2-5386-48b3-949f-d9d5f4181aa4",
-          "width": 21184,
-          "x": -32,
-          "y": -288,
-          "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5593,8 +5739,8 @@
           "name": "Plat_Triste",
           "persistentUuid": "057bd8b0-393d-4cd7-94f4-2acd458aac42",
           "width": 0,
-          "x": 10038,
-          "y": 396,
+          "x": 10048,
+          "y": 416,
           "zOrder": 73,
           "numberProperties": [],
           "stringProperties": [],
@@ -5607,9 +5753,9 @@
           "layer": "",
           "name": "Plat_Triste",
           "persistentUuid": "9867b620-5310-49de-a30f-41ef56cd9d25",
-          "width": 59,
-          "x": 10070,
-          "y": 384,
+          "width": 64,
+          "x": 10080,
+          "y": 416,
           "zOrder": 74,
           "numberProperties": [],
           "stringProperties": [],
@@ -5638,8 +5784,8 @@
           "name": "Plat_Triste",
           "persistentUuid": "f90136d1-fb71-4821-8949-35285837226e",
           "width": 119,
-          "x": 10171,
-          "y": 427,
+          "x": 10176,
+          "y": 448,
           "zOrder": 74,
           "numberProperties": [],
           "stringProperties": [],
@@ -5647,15 +5793,225 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 32,
           "layer": "",
-          "name": "Piso_Triste1",
-          "persistentUuid": "9dc77ef0-7bd5-4cb4-a1ee-0aa844334eff",
-          "width": 0,
-          "x": 915,
-          "y": 230,
-          "zOrder": 76,
+          "name": "Plat_Triste",
+          "persistentUuid": "126cc3a7-0272-4394-8b42-37bd125415f3",
+          "width": 128,
+          "x": 10304,
+          "y": 416,
+          "zOrder": 74,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "Plat_Triste",
+          "persistentUuid": "7a369ed6-68b1-428f-a1ad-ef24b4293dd2",
+          "width": 128,
+          "x": 10432,
+          "y": 448,
+          "zOrder": 74,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 640,
+          "layer": "Background",
+          "name": "Back_Triste",
+          "persistentUuid": "93f854b8-aa82-4075-a4fa-42587ce3e059",
+          "width": 1248,
+          "x": 0,
+          "y": -96,
+          "zOrder": 77,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 640,
+          "layer": "Background",
+          "name": "Back_Triste",
+          "persistentUuid": "b00dd358-02ab-4bdb-9658-fbb77077af6f",
+          "width": 1248,
+          "x": 1248,
+          "y": -96,
+          "zOrder": 77,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 640,
+          "layer": "Background",
+          "name": "Back_Triste",
+          "persistentUuid": "d4efd9a6-7c20-467c-8da6-22cf01e96681",
+          "width": 1248,
+          "x": 2496,
+          "y": -96,
+          "zOrder": 77,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 640,
+          "layer": "Background",
+          "name": "Back_Triste",
+          "persistentUuid": "216dcc7e-2007-4a0d-b86f-d0e77ff3d47b",
+          "width": 1248,
+          "x": 3744,
+          "y": -96,
+          "zOrder": 77,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 640,
+          "layer": "Background",
+          "name": "Back_Triste",
+          "persistentUuid": "46d90dc5-ec52-434b-94b0-270262fe865d",
+          "width": 1248,
+          "x": 4992,
+          "y": -96,
+          "zOrder": 77,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 640,
+          "layer": "Background",
+          "name": "Back_Triste",
+          "persistentUuid": "f1a08c11-16fe-4019-9458-e458f697966a",
+          "width": 1248,
+          "x": 6240,
+          "y": -96,
+          "zOrder": 77,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 640,
+          "layer": "Background",
+          "name": "Back_Triste",
+          "persistentUuid": "2664dd43-dfe6-4a68-bb49-666d0897ea75",
+          "width": 1248,
+          "x": 7488,
+          "y": -96,
+          "zOrder": 77,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 640,
+          "layer": "Background",
+          "name": "Back_Triste",
+          "persistentUuid": "82994f7a-f73c-4a68-ad40-354fa0af2e1d",
+          "width": 1248,
+          "x": 8736,
+          "y": -96,
+          "zOrder": 77,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 640,
+          "layer": "Background",
+          "name": "Back_Triste",
+          "persistentUuid": "d0dc19ae-870b-4f20-80b6-3db483f05170",
+          "width": 1248,
+          "x": 9984,
+          "y": -96,
+          "zOrder": 77,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 640,
+          "layer": "Background",
+          "name": "Back_Triste",
+          "persistentUuid": "fb245ca6-beb5-41fb-81a1-305b020714c5",
+          "width": 1248,
+          "x": 11232,
+          "y": -96,
+          "zOrder": 77,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 640,
+          "layer": "Background",
+          "name": "Back_Triste",
+          "persistentUuid": "922b3d57-54fb-4188-8168-deb9d2a14bb5",
+          "width": 1248,
+          "x": 12480,
+          "y": -96,
+          "zOrder": 77,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 640,
+          "layer": "Background",
+          "name": "Back_Triste",
+          "persistentUuid": "e74effe1-2817-4b82-975c-5b4e94e0efc3",
+          "width": 1248,
+          "x": 13728,
+          "y": -96,
+          "zOrder": 77,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 640,
+          "layer": "Background",
+          "name": "Back_Triste",
+          "persistentUuid": "c0ad9776-032d-4cdf-8de5-221273681d93",
+          "width": 1248,
+          "x": 14976,
+          "y": -96,
+          "zOrder": 77,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5823,6 +6179,70 @@
             "g": 0,
             "r": 0
           }
+        },
+        {
+          "assetStoreId": "",
+          "name": "NewSprite",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "canBeGrabbed": false,
+              "name": "Platform",
+              "platformType": "NormalPlatform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            },
+            {
+              "acceleration": 400,
+              "allowDiagonals": false,
+              "angleOffset": 0,
+              "angularMaxSpeed": 180,
+              "customIsometryAngle": 30,
+              "deceleration": 800,
+              "ignoreDefaultControls": true,
+              "maxSpeed": 200,
+              "movementAngleOffset": -45,
+              "name": "TopDownMovement",
+              "rotateObject": false,
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "viewpoint": "CustomIsometry"
+            }
+          ],
+          "animations": [
+            {
+              "name": "Follow",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.07999999821186066,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Follow.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -6516,6 +6936,7 @@
                       "colorG": 176,
                       "colorR": 74,
                       "creationTime": 0,
+                      "folded": true,
                       "name": "Game Over",
                       "source": "",
                       "type": "BuiltinCommonInstructions::Group",
@@ -6704,6 +7125,7 @@
                       "colorG": 176,
                       "colorR": 74,
                       "creationTime": 0,
+                      "folded": true,
                       "name": "Respawnando",
                       "source": "",
                       "type": "BuiltinCommonInstructions::Group",
@@ -6746,6 +7168,59 @@
                               "parameters": [
                                 "",
                                 "\"Game\""
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "parameters": []
+                    },
+                    {
+                      "colorB": 228,
+                      "colorG": 176,
+                      "colorR": 74,
+                      "creationTime": 0,
+                      "name": "Muda Fase",
+                      "source": "",
+                      "type": "BuiltinCommonInstructions::Group",
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CollisionNP"
+                              },
+                              "parameters": [
+                                "Slimesito",
+                                "NewSprite",
+                                "",
+                                "",
+                                ""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Scene"
+                              },
+                              "parameters": [
+                                "",
+                                "\"Intro\"",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "Espinho_Alegria",
+                                "CameraCenterX()",
+                                "CameraCenterY()",
+                                ""
                               ]
                             }
                           ]
@@ -6892,21 +7367,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 539,
-          "layer": "",
-          "name": "Back_Triste",
-          "persistentUuid": "80cec791-c041-4404-b069-8673233e2258",
-          "width": 958,
-          "x": 1,
-          "y": -1,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 79,
           "layer": "",
           "name": "NewText",
@@ -6980,6 +7440,80 @@
         {
           "ambientLightColorB": 6788568,
           "ambientLightColorG": 6788568,
+          "ambientLightColorR": 1597066561,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior"
+        },
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior"
+        },
+        {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior"
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Untitled_32scene",
+      "name": "Untitled scene",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 1,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [],
+      "objects": [],
+      "events": [],
+      "layers": [
+        {
+          "ambientLightColorB": 0,
+          "ambientLightColorG": 134217728,
           "ambientLightColorR": 1597066561,
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
@@ -7243,6 +7777,15 @@
               },
               "parameters": [
                 "pressUp",
+                "TopDownMovement"
+              ]
+            },
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::SimulateLeftKey"
+              },
+              "parameters": [
+                "NewSprite",
                 "TopDownMovement"
               ]
             }
