@@ -2142,6 +2142,24 @@
         "name": "assets\\background_calma.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewSprite2-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite2-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gameOver.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\gameOver.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2173,6 +2191,7 @@
           "yGrabOffset": 0
         },
         {
+          "maxSpeed": 200,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 400,
@@ -2182,7 +2201,6 @@
           "customIsometryAngle": 30,
           "deceleration": 800,
           "ignoreDefaultControls": true,
-          "maxSpeed": 200,
           "movementAngleOffset": -45,
           "rotateObject": false,
           "viewpoint": "CustomIsometry"
@@ -2786,7 +2804,7 @@
       "variables": [
         {
           "folded": true,
-          "name": "duck",
+          "name": "dead",
           "type": "boolean",
           "value": false
         }
@@ -4844,14 +4862,14 @@
       "uiSettings": {
         "grid": true,
         "gridType": "rectangular",
-        "gridWidth": 32,
-        "gridHeight": 32,
+        "gridWidth": 16,
+        "gridHeight": 16,
         "gridOffsetX": 0,
         "gridOffsetY": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.3699999999999998,
+        "zoomFactor": 0.6899999999999998,
         "windowMask": false
       },
       "objectsGroups": [
@@ -5708,7 +5726,7 @@
           "layer": "",
           "name": "Piso_Triste1",
           "persistentUuid": "3b6163bf-e037-45fe-b11f-3f40edf98379",
-          "width": 5440,
+          "width": 5408,
           "x": 9856,
           "y": 64,
           "zOrder": 70,
@@ -5733,28 +5751,13 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "Plat_Triste",
-          "persistentUuid": "057bd8b0-393d-4cd7-94f4-2acd458aac42",
-          "width": 0,
-          "x": 10048,
-          "y": 416,
-          "zOrder": 73,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": true,
           "height": 32,
           "layer": "",
           "name": "Plat_Triste",
           "persistentUuid": "9867b620-5310-49de-a30f-41ef56cd9d25",
           "width": 64,
-          "x": 10080,
+          "x": 10048,
           "y": 416,
           "zOrder": 74,
           "numberProperties": [],
@@ -5784,8 +5787,8 @@
           "name": "Plat_Triste",
           "persistentUuid": "f90136d1-fb71-4821-8949-35285837226e",
           "width": 119,
-          "x": 10176,
-          "y": 448,
+          "x": 10153,
+          "y": 464,
           "zOrder": 74,
           "numberProperties": [],
           "stringProperties": [],
@@ -5798,9 +5801,9 @@
           "layer": "",
           "name": "Plat_Triste",
           "persistentUuid": "126cc3a7-0272-4394-8b42-37bd125415f3",
-          "width": 128,
-          "x": 10304,
-          "y": 416,
+          "width": 64,
+          "x": 10272,
+          "y": 480,
           "zOrder": 74,
           "numberProperties": [],
           "stringProperties": [],
@@ -5814,8 +5817,8 @@
           "name": "Plat_Triste",
           "persistentUuid": "7a369ed6-68b1-428f-a1ad-ef24b4293dd2",
           "width": 128,
-          "x": 10432,
-          "y": 448,
+          "x": 10336,
+          "y": 464,
           "zOrder": 74,
           "numberProperties": [],
           "stringProperties": [],
@@ -6307,6 +6310,16 @@
               "parameters": [
                 "gameOver"
               ]
+            },
+            {
+              "type": {
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Slimesito",
+                "dead",
+                "False"
+              ]
             }
           ]
         },
@@ -6542,72 +6555,6 @@
                               },
                               "parameters": [
                                 "Plat_Triste",
-                                "TopDownMovement",
-                                "+",
-                                "50"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "TopDownMovementBehavior::MaxSpeed"
-                              },
-                              "parameters": [
-                                "Plat_Raiva",
-                                "TopDownMovement",
-                                "+",
-                                "50"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "TopDownMovementBehavior::MaxSpeed"
-                              },
-                              "parameters": [
-                                "Lava_Raiva",
-                                "TopDownMovement",
-                                "+",
-                                "50"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "TopDownMovementBehavior::MaxSpeed"
-                              },
-                              "parameters": [
-                                "BlocoLava_Raiva",
-                                "TopDownMovement",
-                                "+",
-                                "50"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "TopDownMovementBehavior::MaxSpeed"
-                              },
-                              "parameters": [
-                                "Back_Raiva",
-                                "TopDownMovement",
-                                "+",
-                                "50"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "TopDownMovementBehavior::MaxSpeed"
-                              },
-                              "parameters": [
-                                "Back_Alegria",
-                                "TopDownMovement",
-                                "+",
-                                "50"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "TopDownMovementBehavior::MaxSpeed"
-                              },
-                              "parameters": [
-                                "Back_Calma",
                                 "TopDownMovement",
                                 "+",
                                 "50"
@@ -6936,18 +6883,10 @@
                       "colorG": 176,
                       "colorR": 74,
                       "creationTime": 0,
-                      "folded": true,
                       "name": "Game Over",
                       "source": "",
                       "type": "BuiltinCommonInstructions::Group",
                       "events": [
-                        {
-                          "type": "BuiltinCommonInstructions::Link",
-                          "include": {
-                            "includeConfig": 0
-                          },
-                          "target": "Game Over"
-                        },
                         {
                           "type": "BuiltinCommonInstructions::Comment",
                           "color": {
@@ -6970,18 +6909,6 @@
                               },
                               "parameters": [],
                               "subInstructions": [
-                                {
-                                  "type": {
-                                    "value": "CollisionNP"
-                                  },
-                                  "parameters": [
-                                    "Slimesito",
-                                    "",
-                                    "",
-                                    "",
-                                    ""
-                                  ]
-                                },
                                 {
                                   "type": {
                                     "value": "CollisionNP"
@@ -7106,68 +7033,34 @@
                                 },
                                 {
                                   "type": {
-                                    "value": "Montre"
-                                  },
-                                  "parameters": [
-                                    "gameOver",
-                                    ""
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ],
-                      "parameters": []
-                    },
-                    {
-                      "colorB": 228,
-                      "colorG": 176,
-                      "colorR": 74,
-                      "creationTime": 0,
-                      "folded": true,
-                      "name": "Respawnando",
-                      "source": "",
-                      "type": "BuiltinCommonInstructions::Group",
-                      "events": [
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "BuiltinCommonInstructions::And"
-                              },
-                              "parameters": [],
-                              "subInstructions": [
-                                {
-                                  "type": {
-                                    "value": "AnyKeyPressed"
-                                  },
-                                  "parameters": [
-                                    ""
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "VarSceneTxt"
+                                    "value": "ModVarSceneTxt"
                                   },
                                   "parameters": [
                                     "GameStatus",
                                     "=",
                                     "\"Dead\""
                                   ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "SetObjectVariableAsBoolean"
+                                  },
+                                  "parameters": [
+                                    "Slimesito",
+                                    "dead",
+                                    "True"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Scene"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "\"Game Over\"",
+                                    ""
+                                  ]
                                 }
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "PushScene"
-                              },
-                              "parameters": [
-                                "",
-                                "\"Game\""
                               ]
                             }
                           ]
@@ -7208,18 +7101,6 @@
                               "parameters": [
                                 "",
                                 "\"Intro\"",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "Create"
-                              },
-                              "parameters": [
-                                "",
-                                "Espinho_Alegria",
-                                "CameraCenterX()",
-                                "CameraCenterY()",
                                 ""
                               ]
                             }
@@ -7349,7 +7230,7 @@
       "title": "",
       "v": 209,
       "uiSettings": {
-        "grid": false,
+        "grid": true,
         "gridType": "rectangular",
         "gridWidth": 32,
         "gridHeight": 32,
@@ -7357,8 +7238,8 @@
         "gridOffsetY": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
-        "snap": false,
-        "zoomFactor": 0.6999999999999997,
+        "snap": true,
+        "zoomFactor": 0.5399999999999996,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -7367,11 +7248,11 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 79,
+          "height": 82,
           "layer": "",
           "name": "NewText",
           "persistentUuid": "89f70098-7814-4bed-a924-793079ec5097",
-          "width": 296,
+          "width": 301,
           "x": 339,
           "y": 174,
           "zOrder": 2,
@@ -7393,6 +7274,51 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 544,
+          "layer": "Background",
+          "name": "fundoGameOver",
+          "persistentUuid": "3a27540b-0ae4-46e5-bae4-797ff1cff005",
+          "width": 960,
+          "x": 0,
+          "y": 0,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 127.99999237060547,
+          "layer": "",
+          "name": "Slimesito",
+          "persistentUuid": "899396a7-228c-42ae-ba6a-9d8322af27e8",
+          "width": 128,
+          "x": 415.79559326171875,
+          "y": 286.0118408203125,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "Chãozin",
+          "name": "Piso_Triste2",
+          "persistentUuid": "a1ceaa63-61b3-471b-b229-7c2aa644bd56",
+          "width": 64,
+          "x": 448,
+          "y": 448,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -7406,7 +7332,21 @@
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
-          "effects": [],
+          "effects": [
+            {
+              "effectType": "Glow",
+              "name": "Effect",
+              "doubleParameters": {
+                "distance": 15,
+                "innerStrength": 1,
+                "outerStrength": 2
+              },
+              "stringParameters": {
+                "color": "#ffffff"
+              },
+              "booleanParameters": {}
+            }
+          ],
           "behaviors": [],
           "string": "Game Over",
           "font": "assets\\dpcomic.ttf",
@@ -7427,93 +7367,92 @@
           "effects": [],
           "behaviors": [],
           "animations": []
+        },
+        {
+          "assetStoreId": "",
+          "name": "fundoGameOver",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "fundoGameOver",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.07999999821186066,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\gameOver.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "Slimesito",
+                "\"Dead\""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
+        {
+          "ambientLightColorB": 9577664,
+          "ambientLightColorG": 6043600,
+          "ambientLightColorR": 11507264,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "Chãozin",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 10631824,
+          "ambientLightColorG": 6043600,
+          "ambientLightColorR": 10607056,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "Background",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
         {
           "ambientLightColorB": 6788568,
           "ambientLightColorG": 6788568,
-          "ambientLightColorR": 1597066561,
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "name": "",
-          "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
-          "effects": []
-        }
-      ],
-      "behaviorsSharedData": [
-        {
-          "name": "Anchor",
-          "type": "AnchorBehavior::AnchorBehavior"
-        },
-        {
-          "name": "Platform",
-          "type": "PlatformBehavior::PlatformBehavior"
-        },
-        {
-          "name": "PlatformerObject",
-          "type": "PlatformBehavior::PlatformerObjectBehavior"
-        },
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
-        }
-      ]
-    },
-    {
-      "b": 209,
-      "disableInputWhenNotFocused": true,
-      "mangledName": "Untitled_32scene",
-      "name": "Untitled scene",
-      "oglFOV": 90,
-      "oglZFar": 500,
-      "oglZNear": 1,
-      "r": 209,
-      "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
-      "title": "",
-      "v": 209,
-      "uiSettings": {
-        "grid": false,
-        "gridType": "rectangular",
-        "gridWidth": 32,
-        "gridHeight": 32,
-        "gridOffsetX": 0,
-        "gridOffsetY": 0,
-        "gridColor": 10401023,
-        "gridAlpha": 0.8,
-        "snap": false,
-        "zoomFactor": 1,
-        "windowMask": false
-      },
-      "objectsGroups": [],
-      "variables": [],
-      "instances": [],
-      "objects": [],
-      "events": [],
-      "layers": [
-        {
-          "ambientLightColorB": 0,
-          "ambientLightColorG": 134217728,
           "ambientLightColorR": 1597066561,
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
