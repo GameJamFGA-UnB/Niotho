@@ -6,6 +6,11 @@ Caso o jogo tenha uma logo, disponibilizá-la no README
 
 https://gamejamfga-unb.github.io/#/
 
+## Link para o jogo
+
+https://iagow.itch.io/niotho
+warning: TOTALMENTE INCOMPLETO!!!
+
 ## 📃 Sobre o jogo
 
 <!---
